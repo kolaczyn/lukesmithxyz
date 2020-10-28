@@ -18,15 +18,20 @@ main {
 body {
     background-color: $color-bg-dark;
     color: $color-white;
-    padding-bottom: 4rem;
     text-decoration: none;
     font-family: sans-serif;
+    font-size: 1.4rem;
 }
 
 a {
-	color: $color-primary;
+    color: $color-primary;
+    text-decoration: none;
 }
 
 a:hover {
 	color: $color-white;
+}
+
+ul {
+    list-style-type: none;
 }

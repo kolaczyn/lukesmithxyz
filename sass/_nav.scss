@@ -1,29 +1,41 @@
 nav {
-    margin-left: auto;
-    margin-right: auto;
     font-size: larger;
-    text-align: center;
-
+    background-color: #1B2342;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    
+    
     .menubar {
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        zoom: 1;
+        // width: min-content
+        max-width: $page-width;
+        // display:inline-block;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        a:link,
+        a:visited {
+            color: white;
+            text-decoration: none;
+        }
+
 
         li {
-            display: block;
-            float: left;
-            width: 100px;
-            min-height: 1.5em;
-            background: #222;
-            border: #444 solid 2px;
-            padding: 3px;
-            margin: 4px;
+            list-style-type: none;
+            padding: .5rem;
+
+
+            &:hover {
+                cursor: pointer;
+                background-color: #141936;
+            }
 
             ul {
                 visibility: hidden;
                 position: absolute;
-                padding-top: 10px;
+                background-color: #1B2342;
+
 
                 li {
                     float: none;
@@ -34,7 +46,6 @@ nav {
             }
 
             &:hover {
-                background: #000;
 
                 ul {
                     visibility: visible;

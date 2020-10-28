@@ -1,19 +1,26 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #links img,footer img, li img, h1 img, h2 img, h3 img, p img, .dropme img {
     max-height: 1em;
     max-width: 1.5em;
 }
 
-body {
-    max-width: 900px;
+main {    
+    max-width: $page-width;
     margin-left: auto;
     margin-right: auto;
-    padding: 1em;
 }
 
-html {
+body {
     background-color: $color-background;
     color: $color-white;
-	padding-bottom: 500px;
+    padding-bottom: 4rem;
+    text-decoration: none;
+    font-family: sans-serif;
 }
 
 a {

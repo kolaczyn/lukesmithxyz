@@ -3,45 +3,45 @@ nav {
     margin-right: auto;
     font-size: larger;
     text-align: center;
-}
 
-.menubar li {
-    display: block;
-    float: left;
-    width: 100px;
-    min-height: 1.5em;
-    background: #222;
-    border: #444 solid 2px;
-    padding: 3px;
-    margin: 4px;
-}
+    .menubar {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        zoom: 1;
 
-.menubar li:hover {
-    background: #000;
-}
+        li {
+            display: block;
+            float: left;
+            width: 100px;
+            min-height: 1.5em;
+            background: #222;
+            border: #444 solid 2px;
+            padding: 3px;
+            margin: 4px;
 
-.menubar li ul {
-    visibility: hidden;
-    position: absolute;
-    padding-top: 10px;
-}
+            ul {
+                visibility: hidden;
+                position: absolute;
+                padding-top: 10px;
 
-.menubar li:hover ul {
-    visibility: visible;
-    padding-left: 0;
-    margin-left: -7px;
-}
+                li {
+                    float: none;
+                    position: relative;
+                    width: 150px;
+                    text-align: left;
+                }
+            }
 
-.menubar li ul li {
-    float: none;
-    position: relative;
-    width: 150px;
-    text-align: left;
-}
+            &:hover {
+                background: #000;
 
-.menubar {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    zoom:1;
+                ul {
+                    visibility: visible;
+                    padding-left: 0;
+                    margin-left: -7px;
+                }
+            }
+        }
+    }
 }

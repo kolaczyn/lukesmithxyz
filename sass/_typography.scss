@@ -1,14 +1,10 @@
-
-h1, h2, h3, h4, h5, h6 {
-	text-align: center;
-    	text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.68);
-}
-
 h1 {
-	color: #fff;
 	font-variant: small-caps;
 }
 
-h2, h3 {
-	color: $color-primary;
+h1,
+h2,
+h3 {
+	color: $color-white;
+	font-variant: small-caps;
 }

@@ -1,6 +1,6 @@
 nav {
     font-size: larger;
-    background-color: #1B2342;
+    background-color: $color-bg-light;
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
@@ -16,7 +16,7 @@ nav {
 
         a:link,
         a:visited {
-            color: white;
+            color: $color-white;
             text-decoration: none;
         }
 
@@ -28,13 +28,13 @@ nav {
 
             &:hover {
                 cursor: pointer;
-                background-color: #141936;
+                background-color: $color-bg-dark;
             }
 
             ul {
                 visibility: hidden;
                 position: absolute;
-                background-color: #1B2342;
+                background-color: $color-bg-light;
 
 
                 li {

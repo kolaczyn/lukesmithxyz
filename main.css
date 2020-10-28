@@ -1,0 +1,114 @@
+#links img, footer img, li img, h1 img, h2 img, h3 img, p img, .dropme img {
+  max-height: 1em;
+  max-width: 1.5em;
+}
+
+body {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  color: inherit;
+  background: inherit;
+}
+
+html {
+  background: #000;
+  color: #ddd;
+  padding-bottom: 500px;
+}
+
+a {
+  color: lime;
+}
+
+a:hover {
+  color: red;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.68);
+}
+
+h1 {
+  color: crimson;
+  font-variant: small-caps;
+}
+
+h2 {
+  color: DeepSkyBlue;
+}
+
+h3 {
+  color: blueviolet;
+}
+
+strong {
+  color: indianred;
+}
+
+em {
+  text-shadow: -1px 1px #444;
+  color: greenyellow;
+}
+
+code {
+  color: limegreen;
+}
+
+nav {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: larger;
+  text-align: center;
+}
+
+.menubar li {
+  display: block;
+  float: left;
+  width: 100px;
+  min-height: 1.5em;
+  background: #222;
+  border: #444 solid 2px;
+  padding: 3px;
+  margin: 4px;
+}
+
+.menubar li:hover {
+  background: #000;
+}
+
+.menubar li ul {
+  visibility: hidden;
+  position: absolute;
+  padding-top: 10px;
+}
+
+.menubar li:hover ul {
+  visibility: visible;
+  padding-left: 0;
+  margin-left: -7px;
+}
+
+.menubar li ul li {
+  float: none;
+  position: relative;
+  width: 150px;
+  text-align: left;
+}
+
+.menubar {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  zoom: 1;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  padding-top: 2em;
+  font-size: larger;
+}
+/*# sourceMappingURL=main.css.map */

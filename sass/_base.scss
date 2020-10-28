@@ -1,0 +1,29 @@
+#links img,footer img, li img, h1 img, h2 img, h3 img, p img, .dropme img {
+    max-height: 1em;
+    max-width: 1.5em;
+}
+
+body {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    color: inherit;
+    background: inherit;
+}
+
+
+html {
+    background: #000;
+    color: #ddd;
+	padding-bottom: 500px;
+}
+
+
+a {
+	color: lime;
+}
+
+a:hover {
+	color: red;
+}

@@ -8,22 +8,18 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
-    color: inherit;
-    background: inherit;
 }
 
-
 html {
-    background: #000;
-    color: #ddd;
+    background-color: $color-background;
+    color: $color-white;
 	padding-bottom: 500px;
 }
 
-
 a {
-	color: lime;
+	color: $color-primary;
 }
 
 a:hover {
-	color: red;
+	color: $color-white;
 }

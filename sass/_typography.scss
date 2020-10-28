@@ -5,14 +5,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	color: crimson;
+	color: #fff;
 	font-variant: small-caps;
 }
 
-h2 {
-	color: DeepSkyBlue;
-}
-
-h3 {
-	color: blueviolet;
+h2, h3 {
+	color: $color-primary;
 }

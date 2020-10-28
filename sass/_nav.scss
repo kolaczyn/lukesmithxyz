@@ -4,11 +4,13 @@ nav {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
-    
-    
+
+    filter: drop-shadow(0 0.2rem 0.5rem rgba(0, 0, 0, 0.4));
+
     .menubar {
         // width: min-content
-        max-width: $page-width;
+        width: $page-width;
+
         // display:inline-block;
         display: flex;
         justify-content: space-around;
@@ -20,10 +22,21 @@ nav {
             text-decoration: none;
         }
 
-
         li {
-            padding: .5rem;
+            transition: background-color 0.15s ease-out;
 
+            &.active {
+                font-weight: bold;
+            }
+
+            flex-grow: 1;
+            padding-top: 0.85rem;
+            padding-bottom: 0.85rem;
+            // width: $page-width / 6;
+            display: flex;
+            // align-items: center;
+            justify-content: center;
+            position: relative;
 
             &:hover {
                 cursor: pointer;
@@ -31,25 +44,38 @@ nav {
             }
 
             ul {
-                visibility: hidden;
-                position: absolute;
+                width: 100%;
                 background-color: $color-bg-light;
 
+                filter: drop-shadow(0 0.25rem 0.5rem rgba(0, 0, 0, 0.5));
+
+                position: absolute;
+                top: 100%;
+                right: 0;
+                transition: all 0.2s ease-in-out;
+
+                opacity: 0;
+                visibility: hidden;
+                transform: scale(1, 0.91);
 
                 li {
-                    float: none;
-                    position: relative;
-                    // width: 150px;
-                    text-align: left;
+                    border: 0.12rem solid $color-bg-dark;
+                    padding: 1rem 0rem;
+                    font-size: 85%;
+
+                    a {
+                        float: left;
+                        margin-right: auto;
+                        margin-left: 0.75rem;
+                    }
                 }
             }
 
             &:hover {
-
                 ul {
+                    transform: scale(1, 1);
+                    opacity: 100%;
                     visibility: visible;
-                    padding-left: 0;
-                    margin-left: -7px;
                 }
             }
         }

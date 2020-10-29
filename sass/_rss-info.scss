@@ -1,5 +1,13 @@
 .rss-info {
-    pre {
+    #rss-links {
+        cursor: pointer;
+    }
+    p:nth-child(3) {
         margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
     }
 }

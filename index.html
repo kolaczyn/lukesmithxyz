@@ -11,50 +11,51 @@
 <nav>
 <ul class="menubar">
 
-    <li><a href="https://lukesmith.xyz/index.html"> Home</a></li>
+    <li class="active"><a href="https://lukesmith.xyz/index.html">Home</a></li>
 
-    <li><a href="https://videos.lukesmith.xyz/">Videos</a>
+    <li>
+        <a href="https://videos.lukesmith.xyz/">Videos</a>
         <ul>
-            <li><a href="https://youtube.com/c/lukesmithxyz"><img src="assets/youtube.svg" alt="YouTube"> YouTube</a></li>
-            <li><a href="https://www.bitchute.com/channel/lukesmith/"><img src="assets/bitchute.svg" alt="BitChute"> Bitchute</a></li>
-            <li><a href="https://lbry.tv/@Luke:7"><img src="assets/lbry.svg" alt="LBRY"> LBRY</a></li>
-            <li><a href="https://videos.lukesmith.xyz/"><img src="assets/peertube.svg" alt="PeerTube"> PeerTube</a></li>
+            <li><a href="https://youtube.com/c/lukesmithxyz">YouTube</a></li>
+            <li><a href="https://www.bitchute.com/channel/lukesmith/">Bitchute</a></li>
+            <li><a href="https://lbry.tv/@Luke:7">LBRY</a></li>
+            <li><a href="https://videos.lukesmith.xyz/">PeerTube</a></li>
         </ul>
     </li>
 
     <li> Linux
         <ul>
-            <li><a href="https://larbs.xyz/"><img src="assets/larbs.svg" alt="LARBS"> LARBS</a></li>
-            <li><a href="https://lukesmith.xyz/programs.html"><img src="assets/computer.svg" alt="Computer"> Programs I use</a></li>
-            <li><a href="https://github.com/lukesmithxyz"><img src="assets/octo.svg" alt="Github"> Github</a></li>
-            <li><a href="https://gitlab.com/lukesmithxyz"><img src="assets/gitlab.svg" alt="Gitlab"> Gitlab</a></li>
-            <li><a href="https://git.lukesmith.xyz/"><img src="assets/git.svg" alt="Git Server"> Git server</a></li>
+            <li><a href="https://larbs.xyz/">LARBS</a></li>
+            <li><a href="https://github.com/lukesmithxyz">Github</a></li>
+            <li><a href="https://gitlab.com/lukesmithxyz">Gitlab</a></li>
+            <li><a href="https://git.lukesmith.xyz/">Git server</a></li>
         </ul>
     </li>
 
     <li><a href="https://notrelated.xyz/"> Learn</a>
         <ul>
-            <li><a href="https://notrelated.xyz/"><img src="assets/nr.svg" alt="Not Related!"> Not Related!</a></li>
-            <li><a href="https://lukesmith.xyz/library.html"><img src="assets/books.svg" alt="Books"> Library</a></li>
-            <li><a href="https://lukesmith.xyz/latex.html"><img src="assets/tex.svg" alt="TeX"> LaTeX</a></li>
+            <li><a href="https://notrelated.xyz/">Not Related!</a></li>
+            <li><a href="https://lukesmith.xyz/library.html">Library</a></li>
+            <li><a href="https://lukesmith.xyz/latex.html">LaTeX</a></li>
         </ul>
     </li>
 
     <li>Personal<ul>
-            <li><a href="https://lukesmith.xyz/emailme.html"><img src="assets/email.svg" alt="Email"> Contact</a></li>
-            <li><a href="https://lukesmith.xyz/blogindex.html"><img src="assets/blog.svg" alt="Blog"> Blog</a></li>
-            <li><a href="https://lukesmith.xyz/files/"><img src="assets/folder.svg" alt="Files"> Files</a></li>
-            <li><a href="https://searx.lukesmith.xyz/"><img src="assets/searx.svg" alt="Searx"> Searx</a></li>
+            <li><a href="https://lukesmith.xyz/emailme.html">Contact</a></li>
+            <li><a href="https://lukesmith.xyz/blogindex.html">Blog</a></li>
+            <li><a href="https://lukesmith.xyz/files/">Files</a></li>
+            <li><a href="https://lukesmith.xyz/programs.html">Programs I use</a></li>
+            <li><a href="https://searx.lukesmith.xyz/">Searx</a></li>
         </ul>
     </li>
 
     <li><a href="https://lukesmith.xyz/donate.html"> Donate</a>
         <ul>
-            <li><a href="https://paypal.me/lukemsmith"><img src="assets/paypal.svg" alt="Paypal"> Paypal</a></li>
-            <li><a href="https://lukesmith.xyz/donate.html#crypto"><img src="assets/bitcoin.svg" alt="Bitcoin"> Crypto</a></li>
-            <li><a href="https://liberapay.com/LukeSmith"><img src="assets/liberapay.svg" alt="Liberapay"> Liberapay</a></li>
-            <li><a href="https://patreon.com/lukesmith"><img src="assets/patreon.svg" alt="Patreon"> Patreon</a></li>
-            <li><a href="https://lukesmith.xyz/donate.html#zelle"><img src="assets/zelle.svg" alt="Zelle"> Bank transfer</a></li>
+            <li><a href="https://paypal.me/lukemsmith">Paypal</a></li>
+            <li><a href="https://lukesmith.xyz/donate.html#crypto">Crypto</a></li>
+            <li><a href="https://liberapay.com/LukeSmith">Liberapay</a></li>
+            <li><a href="https://patreon.com/lukesmith">Patreon</a></li>
+            <li><a href="https://lukesmith.xyz/donate.html#zelle">Bank transfer</a></li>
         </ul>
     </li>
 
@@ -93,29 +94,35 @@
         <h2>Keep up with me via RSS:</h2>
         
         <p>RSS (Really Simple Syndication) is an easy way to keep up with updates from people without relying on the filter of social media. <a href="https://videos.lukesmith.xyz/videos/watch/551a1bfb-8a05-4cdb-b5d3-a42758991d83">See a demonstration.</a></p>
-        
-
-        <pre><code>https://lukesmith.xyz/rss.xml
-https://lukesmith.xyz/youtube.xml
-https://notrelated.xyz/rss
-https://videos.lukesmith.xyz/feeds/videos.xml?accountId=3</code></pre>
+        <p>Below you can find my RSS feed links. Click a link to copy it to your clickboard.</p>
+        <ul id="rss-links">
+            <li><a rss="https://lukesmith.xyz/rss.xml">LukeSmith.xyz</a></li>
+            <li><a rss="https://lukesmith.xyz/youtube.xml">YouTube</a></li>
+            <li><a rss="https://notrelated.xyz/rss">Not Related</a></li>
+            <li><a rss="https://videos.lukesmith.xyz/feeds/videos.xml?accountId=3">Peertube</a></li>
+        </ul>
     </div>
+
 </main>
 
 
 <footer>
-    <a href="https://lukesmith.xyz/donate.html">Donate:</a>
-    <a href="https://paypal.me/lukemsmith"><img src="assets/paypal.svg" alt="Paypal" title="Paypal"></a>
-    <a href="https://liberapay.com/LukeSmith"><img src="assets/liberapay.svg" alt="Liberapay" title="Liberapay"></a>
-    <a href="https://lukesmith.xyz/pix/qr_btc.png"><img src="assets/bitcoin.svg" alt="Bitcoin" title="My Bitcoin address"></a>
-    <a href="https://lukesmith.xyz/pix/qr_xmr.png"><img src="assets/monero.svg" alt="Monero" title="My Monero address"></a>
-<br>
-    <a href="https://lukesmith.xyz/index.html"><img src="assets/home.svg" alt="Home" title="Return to main page"> Home</a> —
-    <a href="https://lukesmith.xyz/emailme.html"><img src="assets/email.svg" alt="Contact" title="How to contact me"> Mail</a> —
-    <a href="https://lukesmith.xyz/blogindex.html"><img src="assets/blog.svg" alt="Blog" title="Blog"> Blog</a> —
-    <a href="https://lukesmith.xyz/rss.xml"><img src="assets/rss.svg" alt="RSS" title="Subscribe to my RSS feed for updates."> Rss</a>
+    <div class="menubar">
+        <div class="top">
+            <!-- <a href="https://lukesmith.xyz/donate.html">Donate:</a>
+            <a href="https://paypal.me/lukemsmith"><img src="assets/paypal.svg" alt="Paypal" title="Paypal"></a>
+            <a href="https://liberapay.com/LukeSmith"><img src="assets/liberapay.svg" alt="Liberapay" title="Liberapay"></a>
+            <a href="https://lukesmith.xyz/pix/qr_btc.png"><img src="assets/bitcoin.svg" alt="Bitcoin" title="My Bitcoin address"></a>
+            <a href="https://lukesmith.xyz/pix/qr_xmr.png"><img src="assets/monero.svg" alt="Monero" title="My Monero address"></a> -->
+        </div>
+        <div class="bottom">
+            <a href="https://lukesmith.xyz/index.html">Home</a>
+            <a href="https://lukesmith.xyz/emailme.html">Mail</a>
+            <a href="https://lukesmith.xyz/blogindex.html">Blog</a>
+            <!-- <a href="https://lukesmith.xyz/rss.xml"><img src="assets/rss.svg" alt="RSS" title="Subscribe to my RSS feed for updates"></a> -->
+        </div>
+    </div>
 </footer>
-
-
-
-</body></html>
+<script src="script.js"></script>
+</body>
+</html>

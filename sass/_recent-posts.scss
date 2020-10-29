@@ -2,4 +2,8 @@
     li:last-child{
         margin-top: .75rem;
     }
+
+    li:not(:first-child){
+        margin-top: .15rem;
+    }
 }

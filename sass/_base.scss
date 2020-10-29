@@ -1,15 +1,12 @@
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#links img,footer img, li img, h1 img, h2 img, h3 img, p img, .dropme img {
-    max-height: 1em;
-    max-width: 1.5em;
-}
-
-main {    
+main {
     max-width: $page-width;
     margin-left: auto;
     margin-right: auto;
@@ -18,7 +15,6 @@ main {
 body {
     background-color: $color-bg-dark;
     color: $color-white;
-    text-decoration: none;
     font-family: sans-serif;
     font-size: 1.4rem;
 }
@@ -26,10 +22,11 @@ body {
 a {
     color: $color-primary;
     text-decoration: none;
-}
+    transition: color 0.15s ease-out;
 
-a:hover {
-	color: $color-white;
+    &:hover {
+        color: $color-white;
+    }
 }
 
 ul {

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://lukesmith.xyz/donate -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Donate!</title>
+<link rel="stylesheet" type="text/css" href="donate.css">
+<link rel="shortcut icon" type="image/png" href="assets/money.png">
+
+<script data-dapp-detection="">
+(function() {
+  let alreadyInsertedMetaTag = false
+
+  function __insertDappDetected() {
+    if (!alreadyInsertedMetaTag) {
+      const meta = document.createElement('meta')
+      meta.name = 'dapp-detected'
+      document.head.appendChild(meta)
+      alreadyInsertedMetaTag = true
+    }
+  }
+
+  if (window.hasOwnProperty('web3')) {
+    // Note a closure can't be used for this var because some sites like
+    // www.wnyc.org do a second script execution via eval for some reason.
+    window.__disableDappDetectionInsertion = true
+    // Likely oldWeb3 is undefined and it has a property only because
+    // we defined it. Some sites like wnyc.org are evaling all scripts
+    // that exist again, so this is protection against multiple calls.
+    if (window.web3 === undefined) {
+      return
+    }
+    __insertDappDetected()
+  } else {
+    var oldWeb3 = window.web3
+    Object.defineProperty(window, 'web3', {
+      configurable: true,
+      set: function (val) {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        oldWeb3 = val
+      },
+      get: function () {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        return oldWeb3
+      }
+    })
+  }
+})()</script></head>
+
+<body>
+
+<img style="float: right;height:200px;padding-right:30px;" alt="Donate" src="assets/money.png">
+<h1>Donate!</h1>
+
+<p>Here are some ways to can donate <a href="https://youtube.com/c/lukesmithxyz">to the channel</a>, <a href="https://larbs.xyz/">LARBS</a>, <a href="https://notrelated.xyz/"><em>Not Related!</em></a> and me. Every bit is appreciated!</p>
+
+<h2 id="money">Donate!</h2>
+
+<center>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+	<input type="hidden" name="cmd" value="_s-xclick">
+	<input type="hidden" name="hosted_button_id" value="WNXQ4BYQ87QNJ">
+	<input type="image" src="assets/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
+	<!-- <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" /> -->
+</form>
+</center>
+
+<p>Or use...
+<a href="https://paypal.me/lukemsmith"><img src="assets/paypal.svg" alt="Paypal"> Paypal</a> —
+<a href="https://liberapay.com/LukeSmith"><img src="assets/liberapay.svg" alt="Liberapay"> Liberapay</a> —
+<a href="https://github.com/sponsors/LukeSmithxyz"><img src="assets/octo.svg" alt="Gitthub"> Github sponsors</a>
+</p>
+
+<p>The <strong>best option</strong> for Americans is setting up a <a href="https://lukesmith.xyz/donate#zelle"><img src="assets/zelle.svg" alt="Zelle"> Zelle</a> donation (<a href="https://lukesmith.xyz/donate#zelle">read below</a>) since Zelle is a direct bank transfer and never take any fee off the top.</p>
+
+<h3>Livestreams</h3>
+
+<p>Donate on the Streamlabs page at <a href="https://streamlabs.com/lukesmithxyz/tip">https://streamlabs.com/lukesmithxyz/tip</a> for a donation notification to appear on the stream. I will read all donations though, not just these.</p>
+
+<h2 id="crypto">Cryptocurrency</h2>
+
+<p>You can donate cryptocurrencies at these addresses:</p>
+
+<ul>
+	<li><img src="assets/bitcoin.svg" alt="Bitcoin"> Bitcoin: 39Z2PRPXCiB7eFWQJPaoWChbAgmjmZYKRC (<a href="https://lukesmith.xyz/pix/qr_btc.png">BTC QR code</a>)</li>
+	<li><img src="assets/monero.svg" alt="Monero"> Monero: 48jewbtxe4jU3MnzJFjTs3gVFWh2nRrAMWdUuUd7Ubo375LL4SjLTnMRKBrXburvEh38QSNLrJy3EateykVCypnm6gcT9bh (<a href="https://lukesmith.xyz/pix/qr_xmr.png">XMR QR code</a>)</li>
+	<li><img src="assets/ethereum.svg" alt="Ethereum"> Ethereum: 0x2f3D63580028b618f3204F01d156AB6A3E3470dB (<a href="https://lukesmith.xyz/pix/qr_eth.png">ETH QR code</a>)</li>
+    <li><img src="assets/chainlink.svg" alt="Chainlink"> Chainlink: 0xf0b911130BA7E103BdA4F6EFB5Ed4c0b279925DD (<a href="https://lukesmith.xyz/pix/qr_link.png">LINK QR code</a>)</li>
+	<li><img src="assets/bat.svg" alt="BAT"> BAT: <a href="https://brave.com/luk005">Use Brave</a> and donate on any of my web pages/profiles or use 0x21FCB99C0eA74A55EA49665d5d8066c8F5B2dA80 (<a href="https://lukesmith.xyz/pix/qr_bat.png">BAT QR Code</a>).</li>
+	<li><img src="assets/lbry.svg" alt="LBRY"> LBC: <a href="https://lbry.tv/@Luke:7">Donate on my LBRY channel</a> or at bbD9UF1akoVX11C5TAp5wP4VgdVHdpTQHY (<a href="https://lukesmith.xyz/pix/qr_lbc.png">LBC QR Code</a>).</li>
+</ul>
+
+<h2 id="links">Affiliate Deals for Free Money</h2>
+<p>Use these to "donate" to me without even costing you extra money.
+<strong>You often get rewards for following these links.</strong>
+
+</p><table>
+<style>
+th, tr { width: 17% ;
+text-align: center;
+padding: 10px;}
+</style>
+    <tbody><tr>
+        <th>Service</th>
+        <th>What it is</th>
+        <th>Your bonus</th>
+        <th>What I Get</th>
+    </tr>
+    <tr>
+        <td>
+            <a href="https://www.vultr.com/?ref=8384069-6G"><img src="assets/vultr.svg" alt="Vultr"> Vultr</a>
+        </td>
+        <td>Virtual Personal Server for web hosting, email, servers etc.</td>
+        <td>$100 credit for first month</td>
+        <td>$25 if you stay on and pay at least $25. This is a steal. We must be ripping them off at this point.</td>
+    </tr>
+    <tr>
+        <td><a href="https://www.epik.com/?affid=we2ro7sa6"><img src="assets/epik.svg" alt="Epik"> Epik</a></td>
+        <td>Domain registrar. Cheap, but also with the ability for perpetual registrations.</td>
+        <td></td>
+        <td>20% in credit of your first purchase</td>
+    </tr>
+    <tr>
+        <td><a href="https://www.coinbase.com/join/smith_5to1"><img src="assets/coinbase.svg" alt="Coinbase"> Coinbase</a></td>
+        <td>Cryptocurrency trading platform</td>
+        <td>$10 in Bitcoin after you buy/sell $100 worth in currencies.</td>
+        <td>$10 in Bitcoin after you buy/sell $100 worth in currencies.</td>
+    </tr>
+    <tr>
+        <td><a href="https://brave.com/luk005"><img src="assets/brave.svg" alt="Brave"> Brave</a></td>
+        <td>The web browser (<a href="https://www.youtube.com/watch?v=n7lYxXrzbjk">see video</a>) I use and recommend</td>
+        <td>No extra reward, but you can get paid to view ads in Brave.</td>
+        <td>Several dollars (depends on your country) in cryptocurrency if you stay on for 30 days.</td>
+    </tr>
+</tbody></table>
+
+
+
+<h2 id="zelle"><img alt="Zelle" src="assets/zelle.svg"> Donate directly (no fee, via Zelle)</h2>
+<p><b>If you have any bank account in the United States, you probably already have Zelle and don't know it.</b> It's a protocol built in to your online bank that transfers money for free.</p>
+<p>To use it:</p>
+<ul>
+	<li>Log on to your online banking for whatever bank you have.</li>
+	<li>Search for a "transfer money" or "Zelle" section.</li>
+	<li>(You may have to confirm your email, but "setup" is automatic.)</li>
+	<li>When asked for a recipient, just put in my email address: <big>luke@lukesmith.xyz</big></li>
+</ul>
+<p><b>Note:</b> If you send a Zelle donation for the podcast with a question or comment, I recommend also sending the question/comment to my email address.
+Zelle seems to sometime misplace comments on donations (at least with my bank): I get the money, but if you have a comment it doesn't always display to me.</p>
+
+<footer>
+    <a href="https://lukesmith.xyz/donate.html">donate:</a>
+    <a href="https://paypal.me/lukemsmith"><img src="assets/paypal.svg" alt="Paypal" title="Paypal"></a>
+    <a href="https://liberapay.com/LukeSmith"><img src="assets/liberapay.svg" alt="Liberapay" title="Liberapay"></a>
+    <a href="https://lukesmith.xyz/pix/qr_btc.png"><img src="assets/bitcoin.svg" alt="Bitcoin" title="My Bitcoin address"></a>
+    <a href="https://lukesmith.xyz/pix/qr_xmr.png"><img src="assets/monero.svg" alt="Monero" title="My Monero address"></a>
+<br>
+    <a href="https://lukesmith.xyz/index.html"><img src="assets/home.svg" alt="Home" title="Return to main page"> HOME</a> —
+    <a href="https://lukesmith.xyz/emailme.html"><img src="assets/email.svg" alt="Contact" title="How to contact me"> MAIL</a> —
+    <a href="https://lukesmith.xyz/blogindex.html"><img src="assets/blog.svg" alt="Blog" title="Blog"> BLOG</a> —
+    <a href="https://lukesmith.xyz/rss.xml"><img src="assets/rss.svg" alt="RSS" title="Subscribe to my RSS feed for updates."> RSS</a>
+</footer>
+
+
+
+</body></html>

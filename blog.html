@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://lukesmith.xyz/blogindex -->
+<html lang="en" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Luke's Blog Index</title>
+<link rel="stylesheet" type="text/css" href="blog.css">
+
+<script data-dapp-detection="">
+(function() {
+  let alreadyInsertedMetaTag = false
+
+  function __insertDappDetected() {
+    if (!alreadyInsertedMetaTag) {
+      const meta = document.createElement('meta')
+      meta.name = 'dapp-detected'
+      document.head.appendChild(meta)
+      alreadyInsertedMetaTag = true
+    }
+  }
+
+  if (window.hasOwnProperty('web3')) {
+    // Note a closure can't be used for this var because some sites like
+    // www.wnyc.org do a second script execution via eval for some reason.
+    window.__disableDappDetectionInsertion = true
+    // Likely oldWeb3 is undefined and it has a property only because
+    // we defined it. Some sites like wnyc.org are evaling all scripts
+    // that exist again, so this is protection against multiple calls.
+    if (window.web3 === undefined) {
+      return
+    }
+    __insertDappDetected()
+  } else {
+    var oldWeb3 = window.web3
+    Object.defineProperty(window, 'web3', {
+      configurable: true,
+      set: function (val) {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        oldWeb3 = val
+      },
+      get: function () {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        return oldWeb3
+      }
+    })
+  }
+})()</script></head>
+
+<body>
+
+<h1>
+<img src="assets/blog.svg" alt="blog icon">
+<a href="https://lukesmith.xyz/index.html">Luke</a>'s Blog Index</h1>
+
+<nav>
+<ul class="menubar">
+
+    <li><a href="https://lukesmith.xyz/index.html"><img src="assets/home.svg" alt="Home"> Home</a></li>
+
+    <li><a href="https://videos.lukesmith.xyz/"><img src="assets/camcorder.svg" alt="Camcorder"> Videos</a>
+        <ul>
+            <li><a href="https://youtube.com/c/lukesmithxyz"><img src="assets/youtube.svg" alt="YouTube"> YouTube</a></li>
+            <li><a href="https://www.bitchute.com/channel/lukesmith/"><img src="assets/bitchute.svg" alt="BitChute"> Bitchute</a></li>
+            <li><a href="https://lbry.tv/@Luke:7"><img src="assets/lbry.svg" alt="LBRY"> LBRY</a></li>
+            <li><a href="https://videos.lukesmith.xyz/"><img src="assets/peertube.svg" alt="PeerTube"> Locally-hosted videos</a></li>
+        </ul>
+    </li>
+
+    <li><img src="assets/tux.svg" alt="Tux"> Linux
+        <ul>
+            <li><a href="https://larbs.xyz/"><img src="assets/larbs.svg" alt="LARBS"> LARBS</a></li>
+            <li><a href="https://lukesmith.xyz/programs.html"><img src="assets/computer.svg" alt="Computer"> Programs I use</a></li>
+            <li><a href="https://github.com/lukesmithxyz"><img src="assets/octo.svg" alt="Github"> Github</a></li>
+            <li><a href="https://gitlab.com/lukesmithxyz"><img src="assets/gitlab.svg" alt="Gitlab"> Gitlab</a></li>
+            <li><a href="https://git.lukesmith.xyz/"><img src="assets/git.svg" alt="Git Server"> Git server</a></li>
+        </ul>
+    </li>
+
+    <li><a href="https://notrelated.xyz/"><img src="assets/nr.svg" alt="Not Related!"> Learn</a>
+        <ul>
+            <li><a href="https://notrelated.xyz/"><img src="assets/nr.svg" alt="Not Related!"> <i>Not Related!</i></a></li>
+            <li><a href="https://lukesmith.xyz/library.html"><img src="assets/books.svg" alt="Books"> Library</a></li>
+            <li><a href="https://lukesmith.xyz/latex.html"><img src="assets/tex.svg" alt="TeX"> LaTeX</a></li>
+            <!-- <li><a href="nitpick.html"><img src="pix/gifs/butts.png" class=soy alt="Soyboy"> Nitpicking</a></li> -->
+        </ul>
+    </li>
+
+    <li>Personal
+        <ul>
+            <li><a href="https://lukesmith.xyz/emailme.html"><img src="assets/email.svg" alt="Email"> Contact</a></li>
+            <li><a href="https://lukesmith.xyz/blogindex.html"><img src="assets/blog.svg" alt="Blog"> Blog</a></li>
+            <li><a href="https://lukesmith.xyz/files/"><img src="assets/folder.svg" alt="Files"> Files</a></li>
+            <li><a href="https://searx.lukesmith.xyz/"><img src="assets/searx.svg" alt="Searx"> Search Engine</a></li>
+        </ul>
+    </li>
+
+    <li><a href="https://lukesmith.xyz/donate.html"><img src="assets/money.png" alt="Donate"> Donate</a>
+        <ul>
+            <li><a href="https://paypal.me/lukemsmith"><img src="assets/paypal.svg" alt="Paypal"> Paypal</a></li>
+            <li><a href="https://lukesmith.xyz/donate.html#crypto"><img src="assets/bitcoin.svg" alt="Bitcoin">/<img src="assets/monero.svg" alt="Monero"> Crypto</a></li>
+            <li><a href="https://liberapay.com/LukeSmith"><img src="assets/liberapay.svg" alt="Liberapay"> Liberapay</a></li>
+            <li><a href="https://patreon.com/lukesmith"><img src="assets/patreon.svg" alt="Patreon"> Patreon</a></li>
+            <li><a href="https://lukesmith.xyz/donate.html#zelle"><img src="assets/zelle.svg" alt="Zelle"> Bank transfer</a></li>
+        </ul>
+    </li>
+
+</ul>
+</nav>
+
+<p>For a rolling view of this blog, check out <a href="https://lukesmith.xyz/blog.html">this page</a>.
+
+</p><p>Subscribe to the blog by using <a href="https://lukesmith.xyz/rss.xml">this RSS link</a>.</p>
+<h2>September 2020</h2>
+<ul>
+<!-- LB -->
+<li>2020 Oct 09 – <a href="https://lukesmith.xyz/blog/muttwizard-is-better-now.html">mutt-wizard is better now</a></li>
+<li>2020 Sep 17 – <a href="https://lukesmith.xyz/blog/working-on-something-big-possible-momentarily-larbs-downage.html">Working on something big. Possible momentarily LARBS downage.</a></li>
+</ul>
+
+<h2>August 2020</h2>
+<ul>
+<li>2020 Aug 17 – <a href="https://lukesmith.xyz/blog/new-documentaries-and-lectures-on-peertube.html">New documentaries and lectures on PeerTube</a></li>
+<li>2020 Aug 15 – <a href="https://lukesmith.xyz/blog/only-mediocre-minds-nitpick-new-article.html">Only Mediocre Minds Nitpick (new article)</a></li>
+<li>2020 Aug 14 – <a href="https://lukesmith.xyz/blog/internet-has-been-cucking-me.html">Internet has been cucking me</a></li>
+<li>2020 Aug 12 – <a href="https://lukesmith.xyz/blog/recommended-libreopen-source-crypto-wallet.html">Recommended libre/open source crypto wallet?</a></li>
+<li>2020 Aug 07 – <a href="https://lukesmith.xyz/blog/redesigning-the-website.html">Redesigning the website</a></li>
+</ul>
+
+<h2>July 2020</h2>
+<ul>
+<li>2020 Jul 19 – <a href="https://lukesmith.xyz/blog/open-call-for-larbs-users.html">Open call for LARBS users</a></li>
+<li>2020 Jul 15 – <a href="https://lukesmith.xyz/blog/peertube-migration-is-done-no-obvious-errors-full-video-sync-to-happen-soon.html">Peertube migration is done! No obvious errors. Full video sync to happen soon!</a></li>
+<li>2020 Jul 15 – <a href="https://lukesmith.xyz/blog/peertube-will-be-down-for-migration-today.html">PeerTube will be down for migration today</a></li>
+<li>2020 Jul 14 – <a href="https://lukesmith.xyz/blog/ill-be-migrating-to-a-superior-server-for-peertube.html">I'll be migrating to a superior server for Peertube</a></li>
+<li>2020 Jul 10 – <a href="https://lukesmith.xyz/blog/ill-be-returning-to-make-videos-on-monday-check-out-peertube.html">I'll be returning to make videos on Monday. Check out Peertube.</a></li>
+</ul>
+
+<h2>June 2020</h2>
+<ul>
+<li>2020 Jun 20 – <a href="https://lukesmith.xyz/blog/a-guide-to-using-rss-to-replace-social-media.html">A Guide to Using RSS to Replace Social Media</a></li>
+<li>2020 Jun 18 – <a href="https://lukesmith.xyz/blog/anyone-done-peertube-before.html">Anyone done Peertube before?</a></li>
+<li>2020 Jun 10 – <a href="https://lukesmith.xyz/blog/i-have-my-own-search-engine-now.html">I have my own search engine now</a></li>
+<li>2020 Jun 10 – <a href="https://lukesmith.xyz/blog/gnutards-unequivocally-destroyed-eternally.html">GNUtards unequivocally destroyed eternally</a></li>
+<li>2020 Jun 09 – <a href="https://lukesmith.xyz/blog/le-shill-lion.html">Le Shill Lion</a></li>
+<li>2020 Jun 08 – <a href="https://lukesmith.xyz/blog/ill-have-server-downtime-tomorrow.html">I'll have server downtime tomorrow.</a></li>
+<li>2020 Jun 08 – <a href="https://lukesmith.xyz/blog/oooof-big-server-downage.html">Oooof! Big server downage!</a></li>
+<li>2020 Jun 08 – <a href="https://lukesmith.xyz/blog/on-the-swallowing-patch-in-dwm.html">On the swallowing patch in dwm</a></li>
+<li>2020 Jun 06 – <a href="https://lukesmith.xyz/blog/manjaro-is-good-for-noobs.html">Manjaro is good for noobs.</a></li>
+<li>2020 Jun 04 – <a href="https://lukesmith.xyz/blog/not-related-is-officially-back-new-episode-tomorrow-morning.html">Not Related! is officially back. New episode tomorrow morning.</a></li>
+<li>2020 Jun 04 – <a href="https://lukesmith.xyz/blog/first-episode-of-a-full-series-on-the-basics-of-shell-scripting.html">First episode of a full series on the basics of shell scripting</a></li>
+<li>2020 Jun 04 – <a href="https://lukesmith.xyz/blog/converting-facebook-feeds-to-rss.html">Converting Facebook feeds to RSS?</a></li>
+<li>2020 Jun 02 – <a href="https://lukesmith.xyz/blog/github-sponsorship.html">Github sponsorship</a></li>
+<li>2020 Jun 01 – <a href="https://lukesmith.xyz/blog/i-dont-trust-wikipedia-anymore-also-a-request-for-a-stallman-meme.html">I don't trust Wikipedia anymore. Also, a request for a Stallman meme!</a></li>
+</ul>
+
+<h2>May 2020</h2>
+<ul>
+<li>2020 May 31 – <a href="https://lukesmith.xyz/blog/help-me-livestream-from-the-remote-unaboomers-cabin.html">Help me livestream from the remote Unaboomer's Cabin!</a></li>
+<li>2020 May 31 – <a href="https://lukesmith.xyz/blog/new-vids-on-shell-scripting-and-substring-removal.html">New vids on shell scripting and substring removal</a></li>
+<li>2020 May 30 – <a href="https://lukesmith.xyz/blog/im-going-to-be-ending-i3-support-in-larbs-very-soon.html">I'm going to be ending i3 support in LARBS very soon!</a></li>
+<li>2020 May 29 – <a href="https://lukesmith.xyz/blog/two-factor-authentication-without-a-cell-phone.html">Two factor authentication without a cell phone</a></li>
+<li>2020 May 29 – <a href="https://lukesmith.xyz/blog/full-timecodes-for-the-vimtutor-lets-play.html">Full timecodes for the Vimtutor 'Let's Play'</a></li>
+<li>2020 May 29 – <a href="https://lukesmith.xyz/blog/a-full-commentary-on-vim-while-lets-playing-vimtutor.html">A full commentary on vim while 'let's playing' vimtutor!</a></li>
+<li>2020 May 27 – <a href="https://lukesmith.xyz/blog/ripping-and-spliting-and-tagging-audiobooks-and-albums-from-youtube.html">Ripping and spliting and tagging audiobooks and albums from YouTube</a></li>
+<li>2020 May 26 – <a href="https://lukesmith.xyz/blog/the-advantages-of-dwmblocks.html">The advantages of dwmblocks...</a></li>
+<li>2020 May 25 – <a href="https://lukesmith.xyz/blog/new-video-showcase-of-my-dwm-build.html">New video showcase of my dwm build</a></li>
+<li>2020 May 10 – <a href="https://lukesmith.xyz/blog/politics-matters-most-to-slaves.html">Politics matters most to slaves.</a></li>
+<li>2020 May 09 – <a href="https://lukesmith.xyz/blog/why-do-i-so-rarely-talk-about-politics-on-my-channel.html">Why do I so rarely talk about politics on my channel?</a></li>
+<li>2020 May 03 – <a href="https://lukesmith.xyz/blog/new-website-setup-also-a-statusbar-module-for-network-traffic.html">New website setup, also a statusbar module for network traffic</a></li>
+</ul>
+
+<h2>April 2020</h2>
+<ul>
+<li>2020 Apr 23 – <a href="https://lukesmith.xyz/blog/check-out-my-dwm-and-dwmblocks-builds-and-say-goodbye-to-i3.html">Check out my dwm and dwmblocks builds (and say goodbye to i3)!</a></li>
+<li>2020 Apr 02 – <a href="https://lukesmith.xyz/blog/lincucks-fest-has-been-canceled.html">Lincucks Fest has been canceled!</a></li>
+</ul>
+
+<h2>March</h2>
+<ul>
+<li>2020 Mar 22 – <a href="https://lukesmith.xyz/blog/font-gone-crazy-in-larbs.html">Font gone crazy in LARBS?</a></li>
+<li>2020 Mar 16 – <a href="https://lukesmith.xyz/blog/what-should-be-the-default-browser-for-larbs.html">What should be the default browser for LARBS?</a></li>
+<li>2020 Mar 15 – <a href="https://lukesmith.xyz/blog/ill-be-at-linuxfest-southeast-june-1214-in-charlotte-nc.html">I'll be at Linuxfest Southeast June 12-14 in Charlotte, NC</a></li>
+</ul>
+
+<h2>February 2020</h2>
+<ul>
+<li>2020 Feb 01 – <a href="https://lukesmith.xyz/blog/big-fix-for-the-stsuckless-crashonemoji-error.html">Big fix for the st/suckless 'Crash-On-Emoji' error</a></li>
+</ul>
+
+<h2>January 2020</h2>
+<ul>
+<li>2020 Jan 20 – <a href="https://lukesmith.xyz/blog/newold-episode-of-not-related-out-every-scientific-paper-youve-read-is-wrong.html">New/old episode of Not Related! out: Every scientific paper you've read is wrong</a></li>
+<li>2020 Jan 03 – <a href="https://lukesmith.xyz/blog/new-video-on-new-books.html">New video on new books</a></li>
+</ul>
+
+<h2>December 2019</h2>
+<ul>
+<li>2019 Dec 24 – <a href="https://lukesmith.xyz/blog/merry-christmas-to-all-and-a-vid-from-the-archives.html">Merry Christmas to all and a vid from the archives</a></li>
+<li>2019 Dec 08 – <a href="https://lukesmith.xyz/blog/im-thinking-about-using-bspwm.html">I'm thinking about using bspwm</a></li>
+<li>2019 Dec 04 – <a href="https://lukesmith.xyz/blog/two-more-videos-and-important-larbs-problem.html">Two more videos and important LARBS problem</a></li>
+<li>2019 Dec 01 – <a href="https://lukesmith.xyz/blog/im-back-6-new-videos-out-and-more-coming.html">I'm back! 6 new videos out and more coming...</a></li>
+</ul>
+
+<h2>November 2019</h2>
+<ul>
+<li>2019 Nov 12 – <a href="https://lukesmith.xyz/blog/little-neomutt-fix-for-muttwizard-users.html">Little neomutt fix for mutt-wizard users</a></li>
+</ul>
+
+<h2>September 2019</h2>
+<ul>
+<li>2019 Sep 21 – <a href="https://lukesmith.xyz/blog/video-on-the-zsh-or-z-shell-whatever-the-z-stands-for.html">Video on the zsh or z shell, whatever the z stands for...</a></li>
+<li>2019 Sep 18 – <a href="https://lukesmith.xyz/blog/the-stallman-stuff-is-cringe.html">The Stallman stuff is cringe.</a></li>
+</ul>
+
+<h2>June 2019</h2>
+<ul>
+<li>2019 Jun 21 – <a href="https://lukesmith.xyz/blog/new-crypto-currency-addresses.html">New crypto currency addresses</a></li>
+<li>2019 Jun 04 – <a href="https://lukesmith.xyz/blog/you-have-1-unread-mail-from-the-unaboomers-cabin.html">You have 1 unread mail from the Unaboomer's cabin</a></li>
+</ul>
+
+<h2>May 2019</h2>
+<ul>
+<li>2019 May 27 – <a href="https://lukesmith.xyz/blog/a-script-that-automatically-sets-up-your-personal-mail-server.html">A script that automatically sets up your personal mail server</a></li>
+<li>2019 May 26 – <a href="https://lukesmith.xyz/blog/email-is-still-down.html">Email is still down</a></li>
+<li>2019 May 24 – <a href="https://lukesmith.xyz/blog/possible-mail-downage-today.html">Possible mail downage today</a></li>
+<li>2019 May 18 – <a href="https://lukesmith.xyz/blog/larbs-is-going-throught-significant-changes.html">LARBS is going throught significant changes</a></li>
+<li>2019 May 18 – <a href="https://lukesmith.xyz/blog/lukes-digest-mid-may.html">Luke's Digest: Mid May</a></li>
+<li>2019 May 14 – <a href="https://lukesmith.xyz/blog/technology-meme-review-stream.html">Technology meme review stream</a></li>
+<li>2019 May 08 – <a href="https://lukesmith.xyz/blog/stream-with-kris-occhipinti.html">Stream with Kris Occhipinti</a></li>
+<li>2019 May 08 – <a href="https://lukesmith.xyz/blog/who-needs-a-mouse-to-copy-output-the-extensibility-of-st.html">Who needs a mouse to copy output? The extensibility of st</a></li>
+<li>2019 May 04 – <a href="https://lukesmith.xyz/blog/send-me-all-your-suckless-surf-hacks.html">Send me all your suckless surf hacks!</a></li>
+<li>2019 May 03 – <a href="https://lukesmith.xyz/blog/looking-for-a-comprehensive-book-on-gardening-and-planting-best-if-lindy-too.html">Looking for a comprehensive book on gardening and planting (best if #Lindy too)</a></li>
+<li>2019 May 02 – <a href="https://lukesmith.xyz/blog/luke-digest-for-this-week.html">Luke 'Digest' for this week</a></li>
+</ul>
+
+<h2>April 2019</h2>
+
+<ul>
+<li>2019 Apr 28 – <a href="https://lukesmith.xyz/blog/everything-i-want-to-do-is-illegal-also-another-chadpiping-video.html">Everything I Want to Do Is Illegal (also another Chad-piping video)</a></li>
+<li>2019 Apr 26 – <a href="https://lukesmith.xyz/blog/layin-down-pipes-like-a-unix-chad.html">Layin' down Pipes like a Unix Chad</a></li>
+<li>2019 Apr 21 – <a href="https://lukesmith.xyz/blog/acshually-some-even-better-muttwizard-changes.html">ACSHUALLY... Some even better mutt-wizard changes!</a></li>
+<li>2019 Apr 21 – <a href="https://lukesmith.xyz/blog/muttwizard-20-release-everything-is-better-and-easier.html">mutt-wizard 2.0 release (everything is better and easier)</a></li>
+<li>2019 Apr 20 – <a href="https://lukesmith.xyz/blog/the-right-side-of-history-is-a-spook-on-whig-history-and-selfdeception.html">'The Right Side of History' is a Spook. On Whig History and Self-deception.</a></li>
+<li>2019 Apr 19 – <a href="https://lukesmith.xyz/blog/get-all-your-email-offline-for-archiving-mutt-etc-using-isync.html">Get all your email offline for archiving, mutt, etc: Using isync</a></li>
+<li>2019 Apr 18 – <a href="https://lukesmith.xyz/blog/is-the-terminal-just-for-hipsters-also-livestream-soon.html">Is the terminal just for hipsters? Also, livestream soon.</a></li>
+<li>2019 Apr 17 – <a href="https://lukesmith.xyz/blog/video-on-basic-configuration-of-muttneomutt.html">Video on basic configuration of mutt/neomutt</a></li>
+<li>2019 Apr 15 – <a href="https://lukesmith.xyz/blog/how-to-mount-and-access-android-phones-on-linux-computers.html">How to mount and access Android phones on Linux computers</a></li>
+<li>2019 Apr 12 – <a href="https://lukesmith.xyz/blog/pretty-funny-clip-of-alex-jones-harrassed-by-boomer-liberal.html">Pretty funny clip of Alex Jones harrassed by Boomer liberal</a></li>
+<li>2019 Apr 11 – <a href="https://lukesmith.xyz/blog/why-prefer-free-and-open-source-software.html">Why prefer free and open source software?</a></li>
+<li>2019 Apr 10 – <a href="https://lukesmith.xyz/blog/tagging-ogg-or-opus-files.html">Tagging Ogg or Opus files?</a></li>
+<li>2019 Apr 10 – <a href="https://lukesmith.xyz/blog/bibliographical-references-for-latex-groff-and-pandoc-without-the-effort.html">Bibliographical references for LaTeX, groff and pandoc without the effort</a></li>
+<li>2019 Apr 09 – <a href="https://lukesmith.xyz/blog/exclusive-boomers-only-content.html">Exclusive Boomers Only Content!</a></li>
+<li>2019 Apr 08 – <a href="https://lukesmith.xyz/blog/starting-a-mumble-server-and-unaboomer-cabin-series.html">Starting a Mumble server and 'Unaboomer Cabin' series</a></li>
+<li>2019 Apr 07 – <a href="https://lukesmith.xyz/blog/before-i-get-to-deep-into-this-does-this-exist-already.html">Before I get to deep into this... Does this exist already?</a></li>
+<li>2019 Apr 06 – <a href="https://lukesmith.xyz/blog/blocking-links-from-certain-websites-on-an-apache-web-server.html">Blocking links from certain websites on an Apache web server?</a></li>
+<li>2019 Apr 06 – <a href="https://lukesmith.xyz/blog/boomer-vs-doomer-livestream-starting-imminently.html">Boomer vs. Doomer Livestream Starting Imminently!</a></li>
+<li>2019 Apr 05 – <a href="https://lukesmith.xyz/blog/using-shuf-and-random-for-randomization-in-the-command-line.html">Using shuf and $RANDOM for randomization in the command line</a></li>
+<li>2019 Apr 04 – <a href="https://lukesmith.xyz/blog/boomer-rants-in-woods-about-koding-these-days.html">Boomer rants in woods about koding these days</a></li>
+<li>2019 Apr 02 – <a href="https://lukesmith.xyz/blog/minor-dunst-uglinessbreakage-on-update-in-larbs.html">Minor dunst ugliness/breakage on update in LARBS</a></li>
+</ul>
+
+<h2>March 2019</h2>
+<ul>
+<li>2019 Mar 31 – <a href="https://lukesmith.xyz/blog/clear-your-rss-cache-error-fix.html">Clear your RSS cache; error fix</a></li>
+<li>2019 Mar 30 – <a href="https://lukesmith.xyz/blog/gnuesotericism-stream-in-an-hour.html">GNU/Esotericism Stream in an hour...</a></li>
+<li>2019 Mar 14 – <a href="https://lukesmith.xyz/blog/dont-document-software-if-you-want-to-avoid-pain.html">Don't document software! (If you want to avoid pain!)</a></li>
+<li>2019 Mar 13 – <a href="https://lukesmith.xyz/blog/not-related-live-the-problem-with-academic-statistics-in-1-hour-2pm-edt.html">Not Related! LIVE: The Problem with Academic Statistics (in 1 hour; 2PM EDT)</a></li>
+<li>2019 Mar 12 – <a href="https://lukesmith.xyz/blog/not-related-live-coming-soon-tomorrow.html">Not Related! (LIVE) Coming soon (tomorrow?)...</a></li>
+<li>2019 Mar 12 – <a href="https://lukesmith.xyz/blog/the-bible-on-the-command-line-tutorial.html">The Bible on the command line (tutorial)</a></li>
+<li>2019 Mar 10 – <a href="https://lukesmith.xyz/blog/in-defense-of-pseudoscience-in-video-form.html">In defense of 'Pseudo-science' in video form...</a></li>
+<li>2019 Mar 09 – <a href="https://lukesmith.xyz/blog/livestream-starting-in-less-than-30-minutes.html">Livestream starting in less than 30 minutes</a></li>
+<li>2019 Mar 09 – <a href="https://lukesmith.xyz/blog/larbs-update-to-vifmuberzug-may-require-manual-intervention.html">LARBS update to vifm/überzug may require manual intervention</a></li>
+<li>2019 Mar 09 – <a href="https://lukesmith.xyz/blog/yanggangus-website-building-livestream-at-400-est.html">YangGang.us Website building livestream at 4:00 EST</a></li>
+<li>2019 Mar 08 – <a href="https://lukesmith.xyz/blog/my-repos-are-now-on-gitlab-and-will-be-updated-there-as-well.html">My repos are now on Gitlab and will be updated there as well</a></li>
+<li>2019 Mar 08 – <a href="https://lukesmith.xyz/blog/plumbing-in-linux-plan-9-from-bell-labs-style.html">Plumbing in Linux, Plan 9 from Bell Labs style</a></li>
+<li>2019 Mar 07 – <a href="https://lukesmith.xyz/blog/a-visit-to-the-georgia-guidestones.html">A visit to the Georgia Guidestones</a></li>
+<li>2019 Mar 06 – <a href="https://lukesmith.xyz/blog/new-latin-vulgate-bible-repository.html">New Latin Vulgate Bible repository</a></li>
+<li>2019 Mar 06 – <a href="https://lukesmith.xyz/blog/boomer-forest-larp-episode-22.html">Boomer forest LARP episode 2/2</a></li>
+<li>2019 Mar 05 – <a href="https://lukesmith.xyz/blog/college-stream-starting-now.html">College stream starting now</a></li>
+<li>2019 Mar 05 – <a href="https://lukesmith.xyz/blog/college-tour-livestream-soon.html">College tour livestream soon</a></li>
+<li>2019 Mar 05 – <a href="https://lukesmith.xyz/blog/pacman-for-package-management-on-arch-all-the-basics-and-more.html">Pacman for package management on Arch: All the basics and more</a></li>
+<li>2019 Mar 04 – <a href="https://lukesmith.xyz/blog/thinking-about-getting-a-document-camera-any-suggestions.html">Thinking about getting a document camera: Any suggestions?</a></li>
+<li>2019 Mar 04 – <a href="https://lukesmith.xyz/blog/the-downsides-of-bloated-software-r-markdown-and-latex.html">The downsides of bloated software: R Markdown and LaTeX</a></li>
+<li>2019 Mar 03 – <a href="https://lukesmith.xyz/blog/wow-what-a-bad-day-for-fedorafriends-luke-smith-btfos-logic-mlg-epic-style.html">Wow what a bad day for Fedorafriends! (Luke Smith BTFOS Logic MLG Epic Style)</a></li>
+<li>2019 Mar 03 – <a href="https://lukesmith.xyz/blog/new-git-repo-greek-septuagintnew-testament-on-the-command-line.html">New Git repo: Greek Septuagint/New Testament on the command line</a></li>
+<li>2019 Mar 02 – <a href="https://lukesmith.xyz/blog/fuzzy-finder-fzf-a-dmenu-for-the-terminal.html">Fuzzy finder (fzf), a 'dmenu' for the terminal</a></li>
+<li>2019 Mar 01 – <a href="https://lukesmith.xyz/blog/why-you-should-learn-latin.html">Why you should learn Latin</a></li>
+</ul>
+
+<h2>February 2019</h2>
+
+<ul>
+<li>2019 Feb 27 – <a href="https://lukesmith.xyz/blog/boomer-larps-in-woods.html">Boomer LARPs in Woods</a></li>
+<li>2019 Feb 26 – <a href="https://lukesmith.xyz/blog/you-dont-choose-who-you-are.html">You don't choose who you are</a></li>
+<li>2019 Feb 16 – <a href="https://lukesmith.xyz/blog/some-riverfront-surveying.html">Some riverfront surveying</a></li>
+<li>2019 Feb 15 – <a href="https://lukesmith.xyz/blog/one-week-in-nowhere.html">One week in nowhere</a></li>
+<li>2019 Feb 14 – <a href="https://lukesmith.xyz/blog/preinnawoods-livestream-now.html">Pre-/innawoods/ livestream now</a></li>
+</ul>
+
+<h2>January 2019</h2>
+
+<ul>
+<li>2019 Jan 28 – <a href="https://lukesmith.xyz/blog/how-to-get-a-domain-name-for-cheap-or-free.html">How to Get a Domain Name for Cheap or Free</a></li>
+<li>2019 Jan 26 – <a href="https://lukesmith.xyz/blog/do-you-know-the-via-negativa.html">Do you know the Via Negativa?</a></li>
+<li>2019 Jan 23 – <a href="https://lukesmith.xyz/blog/some-entry-tips-to-using-suckless-programs.html">Some entry tips to using suckless programs</a></li>
+<li>2019 Jan 21 – <a href="https://lukesmith.xyz/blog/audio-problem-fixed-stream-active-immanently.html">Audio problem fixed. Stream active immanently.</a></li>
+<li>2019 Jan 21 – <a href="https://lukesmith.xyz/blog/unaboomergeocities-livestream-soon.html">Unaboomer/Geocities Livestream SOON</a></li>
+<li>2019 Jan 16 – <a href="https://lukesmith.xyz/blog/a-showcase-video-on-fish-as-a-shell.html">A showcase video on fish as a shell</a></li>
+<li>2019 Jan 15 – <a href="https://lukesmith.xyz/blog/anyone-got-ueberzug-image-previews-working-in-vifm.html">Anyone got ueberzug image previews working in vifm?</a></li>
+<li>2019 Jan 12 – <a href="https://lukesmith.xyz/blog/the-horrors-of-the-linux-terminal.html">The 'Horrors' of the Linux Terminal...</a></li>
+<li>2019 Jan 11 – <a href="https://lukesmith.xyz/blog/livestream-now.html">Livestream now</a></li>
+<li>2019 Jan 11 – <a href="https://lukesmith.xyz/blog/recent-work.html">Recent work</a></li>
+<li>2019 Jan 09 – <a href="https://lukesmith.xyz/blog/luke-steps-on-the-python-snek.html">Luke steps on the Python snek</a></li>
+<li>2019 Jan 08 – <a href="https://lukesmith.xyz/blog/anyone-want-to-redo-the-css-for-my-website.html">Anyone want to redo the CSS for my website?</a></li>
+<li>2019 Jan 08 – <a href="https://lukesmith.xyz/blog/suck-on-this-blackpillers.html">Suck on this, black-pillers!</a></li>
+<li>2019 Jan 07 – <a href="https://lukesmith.xyz/blog/anyone-want-the-domain-name-currentyearnet-looking-to-sell.html">Anyone want the domain name `currentyear.net`? Looking to sell.</a></li>
+<li>2019 Jan 07 – <a href="https://lukesmith.xyz/blog/hacking-wishlist-addition-moving-all-before-a-match-to-end-of-file.html">Hacking wishlist addition: Moving all before a match to end of file!</a></li>
+<li>2019 Jan 07 – <a href="https://lukesmith.xyz/blog/contemplating-a-brief-series-on-creating-a-website.html">Contemplating a brief series on creating a website</a></li>
+<li>2019 Jan 06 – <a href="https://lukesmith.xyz/blog/adding-transparency-and-removing-whitespace-from-images-automatically-with-imagemagick.html">Adding transparency and removing whitespace from images automatically with imagemagick</a></li>
+<li>2019 Jan 05 – <a href="https://lukesmith.xyz/blog/why-i-dont-do-gnulinux-evangelism.html">Why I don't do GNU/Linux 'evangelism'</a></li>
+<li>2019 Jan 04 – <a href="https://lukesmith.xyz/blog/nassim-taleb-on-iq-and-what-is-iq-anyway.html">Nassim Taleb on IQ, and what is IQ anyway?</a></li>
+<li>2019 Jan 04 – <a href="https://lukesmith.xyz/blog/why-i-dont-use-polybar-anymore-and-on-ricing.html">Why I don't use polybar anymore? (And on ricing)</a></li>
+<li>2019 Jan 03 – <a href="https://lukesmith.xyz/blog/i-fell-ior-the-suckless-meme-in-image-viewers-too-sxiv.html">i fell Ior the suckless meme in image viewers too: sxiv</a></li>
+<li>2019 Jan 02 – <a href="https://lukesmith.xyz/blog/a-hacking-wishlist.html">A Hacking Wishlist</a></li>
+</ul>
+
+<h2>December 2018</h2>
+
+<ul>
+<li>2018 Dec 31 – <a href="https://lukesmith.xyz/blog/new-year-and-new-plans.html">New Year and New Plans</a></li>
+<li>2018 Dec 31 – <a href="https://lukesmith.xyz/blog/livestream-now-scheduled-on-youtube-and-video-requests.html">Livestream now scheduled on YouTube and video requests?</a></li>
+<li>2018 Dec 31 – <a href="https://lukesmith.xyz/blog/the-new-years-livestream-will-be-on-atlantis-time.html">The New Year's Livestream will be on Atlantis time</a></li>
+<li>2018 Dec 28 – <a href="https://lukesmith.xyz/blog/year-reviewend-of-year-livestream-incoming.html">Year Review-End of Year Livestream Incoming!</a></li>
+<li>2018 Dec 25 – <a href="https://lukesmith.xyz/blog/merry-christmas-and-bitchute-update.html">Merry Christmas! and Bitchute Update</a></li>
+<li>2018 Dec 24 – <a href="https://lukesmith.xyz/blog/what-is-the-best-linux-distro.html">What is 'the best' Linux distro?</a></li>
+<li>2018 Dec 23 – <a href="https://lukesmith.xyz/blog/boomer-rants-in-woods-series.html">'Boomer Rants in Woods' series</a></li>
+<li>2018 Dec 22 – <a href="https://lukesmith.xyz/blog/running-commands-whenever-a-file-is-changed-with-entr.html">Running commands whenever a file is changed with entr</a></li>
+<li>2018 Dec 21 – <a href="https://lukesmith.xyz/blog/im-going-to-use-the-nnn-file-browser.html">I'M GOING TO USE THE NNN FILE BROWSER</a></li>
+<li>2018 Dec 20 – <a href="https://lukesmith.xyz/blog/do-you-hate-patreon-and-paypal.html">Do you hate Patreon and PayPal?</a></li>
+<li>2018 Dec 20 – <a href="https://lukesmith.xyz/blog/transparencychroma-keys-in-mpv-or-vlc.html">Transparency/chroma keys in mpv or vlc?</a></li>
+<li>2018 Dec 20 – <a href="https://lukesmith.xyz/blog/luke-smith-in-1080p.html">Luke Smith in 1080p!</a></li>
+<li>2018 Dec 19 – <a href="https://lukesmith.xyz/blog/grug-like-new-notrelated-episode.html">grug like new notrelated episode</a></li>
+<li>2018 Dec 19 – <a href="https://lukesmith.xyz/blog/physiognomy-is-real-a-request.html">Physiognomy is real! (A request)</a></li>
+<li>2018 Dec 18 – <a href="https://lukesmith.xyz/blog/my-rss-feed-is-getting-too-big.html">My RSS feed is getting too big!</a></li>
+<li>2018 Dec 18 – <a href="https://lukesmith.xyz/blog/are-you-thirsty-for-some-social-media-upcummies.html">Are you thirsty for some Social Media Upcummies?</a></li>
+<li>2018 Dec 16 – <a href="https://lukesmith.xyz/blog/download-any-of-my-thumbnails-easily.html">Download any of my thumbnails easily</a></li>
+<li>2018 Dec 15 – <a href="https://lukesmith.xyz/blog/video-up-on-sed-and-regular-expressions.html">Video up on sed and regular expressions</a></li>
+<li>2018 Dec 14 – <a href="https://lukesmith.xyz/blog/new-st-build-additions-link-handling-and-xresources-and-pywal-compatibility.html">New st build additions: link handling and Xresources and pywal compatibility</a></li>
+<li>2018 Dec 14 – <a href="https://lukesmith.xyz/blog/my-public-blog-script-lb-is-now-much-improved.html">My public blog script, `lb` is now much improved</a></li>
+<li>2018 Dec 13 – <a href="https://lukesmith.xyz/blog/new-video-on-i3-configuration-and-tiling-window-managers.html">New video on i3 configuration and tiling window managers</a></li>
+<li>2018 Dec 03 – <a href="https://lukesmith.xyz/blog/video-on-my-vimrc-and-vim-plug-ins-i-use.html">Video on my vimrc and Vim Plug-Ins I use</a></li>
+<li>2018 Dec 02 – <a href="https://lukesmith.xyz/blog/lazy-sunday-video-on-cpu--temperature-and-memory-for-general-use.html">Lazy Sunday video on CPU, Temperature and Memory for general use</a></li>
+<li>2018 Dec 01 – <a href="https://lukesmith.xyz/blog/looking-for-a-new-colorscheme-for-my-terminal--recommendations-.html">Looking for a new colorscheme for my terminal. Recommendations?</a></li>
+<li>2018 Dec 01 – <a href="https://lukesmith.xyz/blog/github-dotfiles-and-new-i3-video-soon.html">Github Dotfiles and New i3 Video Soon</a></li>
+</ul>
+
+<h2>November 2018</h2>
+<ul>
+<li>2018 Nov 30 – <a href="https://lukesmith.xyz/blog/gdp-and-income-is-a-measure-of-fragility.html">GDP and income is a measure of fragility</a></li>
+<li>2018 Nov 30 – <a href="https://lukesmith.xyz/blog/note-to-newfriends--don-t-share-my-content-on-4chan-.html">Note to newfriends: Don't share my content on 4chan!</a></li>
+<li>2018 Nov 30 – <a href="https://lukesmith.xyz/blog/i-dab-on-all-you-nerds.html">I DAB ON ALL YOU NERDS</a></li>
+<li>2018 Nov 30 – <a href="https://lukesmith.xyz/blog/please-be-on-the-lookout-for-this-phenomenon-among-pretentious-zoomers.html">Please be on the lookout for this phenomenon among pretentious Zoomers</a></li>
+<li>2018 Nov 29 – <a href="https://lukesmith.xyz/blog/how-to-find-minimalist-programs.html">How to find minimalist programs</a></li>
+<li>2018 Nov 28 – <a href="https://lukesmith.xyz/blog/podcast-syndicated-on-spotify.html">Podcast syndicated on Spotify</a></li>
+<li>2018 Nov 28 – <a href="https://lukesmith.xyz/blog/video-up-on-zathura-for-reading-pdfs--djvus--epubs-and-everything-else.html">Video up on zathura for reading pdfs, djvus, epubs and everything else</a></li>
+<li>2018 Nov 23 – <a href="https://lukesmith.xyz/blog/battlestation-repair-video-.html">Battlestation repair video!</a></li>
+<li>2018 Nov 22 – <a href="https://lukesmith.xyz/blog/adobe-reader-is-literally-hitler.html">Adobe Reader is LITERALLY Hitler</a></li>
+<li>2018 Nov 19 – <a href="https://lukesmith.xyz/blog/not-related--site-under-construction.html">Not Related! Site under construction</a></li>
+<li>2018 Nov 19 – <a href="https://lukesmith.xyz/blog/how-do-you-do-urls-or-hyperlinks-in-a-groff-or-troff-document-.html">How do you do URLs or hyperlinks in a groff or troff document?</a></li>
+<li>2018 Nov 18 – <a href="https://lukesmith.xyz/blog/video-on-eqn--formatting-math-and-statistics-in-groff-and-troff.html">Video on eqn: Formatting Math and Statistics in groff and troff</a></li>
+<li>2018 Nov 16 – <a href="https://lukesmith.xyz/blog/not-related---when-you-re-too-rational-to-be-rational-.html">Not Related!: When You're Too Rational to Be Rational!</a></li>
+<li>2018 Nov 13 – <a href="https://lukesmith.xyz/blog/mutt-wizard-protonmail-bridge-compatibility.html">mutt-wizard ProtonMail Bridge compatibility</a></li>
+<li>2018 Nov 11 – <a href="https://lukesmith.xyz/blog/not-quite-livestream-in-preparation.html">Not-Quite-Livestream in preparation</a></li>
+<li>2018 Nov 09 – <a href="https://lukesmith.xyz/blog/quick-tutorial-on-generating-qr-codes.html">Quick tutorial on generating QR codes</a></li>
+<li>2018 Nov 08 – <a href="https://lukesmith.xyz/blog/-live-streams-coming-back-.html">"Live"streams coming back!</a></li>
+<li>2018 Nov 05 – <a href="https://lukesmith.xyz/blog/big-reshuffling-of-scripts-in-larbs-dotfiles.html">Big reshuffling of scripts in LARBS dotfiles</a></li>
+<li>2018 Nov 04 – <a href="https://lukesmith.xyz/blog/some-potentially-relevant-changes-in-larbs-today.html">Some potentially relevant changes in LARBS today</a></li>
+<li>2018 Nov 02 – <a href="https://lukesmith.xyz/blog/possible-email-downage-today.html">Possible email downage today</a></li>
+</ul>
+<h2>October 2018</h2>
+<ul>
+<li>2018 Oct 31 – <a href="https://lukesmith.xyz/blog/bibliographies-and-references-automatically-with-refer-in-groff.html">Bibliographies and references automatically with refer in groff</a></li>
+<li>2018 Oct 30 – <a href="https://lukesmith.xyz/blog/okay--now-this-is-epic---groff-correction-.html">Okay, now THIS is epic. (groff correction)</a></li>
+<li>2018 Oct 30 – <a href="https://lukesmith.xyz/blog/looking-for-larbs-user-submissions-.html">Looking for LARBS-user submissions!</a></li>
+<li>2018 Oct 30 – <a href="https://lukesmith.xyz/blog/accented-and-other-unicode-characters-in-grofftroff.html">Accented and other unicode characters in groff/troff</a></li>
+<li>2018 Oct 30 – <a href="https://lukesmith.xyz/blog/latex-owned-epic-style-by-logical-unix-compliance-of-groff-and-refer.html">LaTeX OWNED EPIC STYLE by LOGICAL UNIX COMPLIANCE of groff and refer</a></li>
+<li>2018 Oct 30 – <a href="https://lukesmith.xyz/blog/new-addresses-for-crypto-ethereum-litecoin-and-dash.html">New addresses for Crypto: Ethereum, Litecoin and Dash</a></li>
+<li>2018 Oct 29 – <a href="https://lukesmith.xyz/blog/easy-emoji-use-with-dmenu.html">Easy emoji use with dmenu 😂👉👉</a></li>
+<li>2018 Oct 28 – <a href="https://lukesmith.xyz/blog/macros-in-groff-and-troff-and-other-basic-formatting.html">Macros in groff and troff and other basic formatting</a></li>
+<li>2018 Oct 27 – <a href="https://lukesmith.xyz/blog/grofftroff-when-latex-and-pandoc-are-bloat.html">groff/troff: When LaTeX and Pandoc are bloat</a></li>
+<li>2018 Oct 27 – <a href="https://lukesmith.xyz/blog/when-i-bring-back-the-forum-what-should-its-name-be.html">When I bring back the forum, what should its name be?</a></li>
+<li>2018 Oct 25 – <a href="https://lukesmith.xyz/blog/video-review-and-overview-of-the-slice-battery-for-thinkpads.html">Video review and overview of the Slice Battery for ThinkPads</a></li>
+<li>2018 Oct 18 – <a href="https://lukesmith.xyz/blog/looking-for-land-for-uncle-lukes-cabin.html">Looking for Land for Uncle Luke's Cabin</a></li>
+<li>2018 Oct 13 – <a href="https://lukesmith.xyz/blog/livestream-for-those-who-missed-it.html">Livestream for those who missed it</a></li>
+<li>2018 Oct 08 – <a href="https://lukesmith.xyz/blog/trip-up-country-and-looking-for-land.html">Trip up Country and Looking for Land</a></li>
+<li>2018 Oct 08 – <a href="https://lukesmith.xyz/blog/episode-on-the-10000-year-explosion-and-pandoras-seed.html">Episode on the 10,000 Year Explosion and Pandora's Seed</a></li>
+<li>2018 Oct 05 – <a href="https://lukesmith.xyz/blog/not-related-episode-will-be-up-soon.html">Not Related! episode will be up soon</a></li>
+<li>2018 Oct 01 – <a href="https://lukesmith.xyz/blog/video-up-on-bash-settings-and-aliases.html">Video up on Bash settings and aliases</a></li>
+</ul>
+
+<h2>September 2018</h2>
+
+<ul>
+<li>2018 Sep 28 – <a href="https://lukesmith.xyz/blog/break-week.html">Break week</a></li>
+<li>2018 Sep 21 – <a href="https://lukesmith.xyz/blog/any-paleoanthropologists-or-geneticists-reading-on-the-toba-population-bottleneck.html">Any Paleo-Anthropologists or geneticists reading? On the Toba Population Bottleneck</a></li>
+<li>2018 Sep 19 – <a href="https://lukesmith.xyz/blog/democracy-the-rule-of-npcs.html">Democracy: The Rule of NPCs</a></li>
+<li>2018 Sep 18 – <a href="https://lukesmith.xyz/blog/rip-lincucks-some-comments-on-recent-events.html">R.I.P. Lincucks! Some comments on recent events</a></li>
+<li>2018 Sep 18 – <a href="https://lukesmith.xyz/blog/yes-im-doing-a-video-on-it.html">Yes, I'm doing a video on it...</a></li>
+<li>2018 Sep 16 – <a href="https://lukesmith.xyz/blog/ssl-cert-failures-with-gmail-accounts-muttwizard.html">SSL cert failures with Gmail accounts (mutt-wizard)</a></li>
+<li>2018 Sep 11 – <a href="https://lukesmith.xyz/blog/le-purityspiral-nationalism.html">Le Purity-Spiral Nationalism</a></li>
+<li>2018 Sep 09 – <a href="https://lukesmith.xyz/blog/thicc-podcast-episode-coming.html">THICC podcast episode coming</a></li>
+<li>2018 Sep 08 – <a href="https://lukesmith.xyz/blog/terry-davis-has-died.html">Terry Davis has died.</a></li>
+<li>2018 Sep 07 – <a href="https://lukesmith.xyz/blog/we-need-to-start-studying-npcs-scientifically.html">We need to start studying NPCs scientifically</a></li>
+<li>2018 Sep 07 – <a href="https://lukesmith.xyz/blog/alex-jones-increasingly-based-now-even-more-banned-from-everything.html">Alex Jones, increasingly BASED, now even more banned from everything</a></li>
+<li>2018 Sep 04 – <a href="https://lukesmith.xyz/blog/notrelatedxyz-website-is-now-up.html">NotRelated.xyz Website is now up!</a></li>
+<li>2018 Sep 02 – <a href="https://lukesmith.xyz/blog/my-diet-following-the-memes.html">My diet following the memes</a></li>
+<li>2018 Sep 01 – <a href="https://lukesmith.xyz/blog/capitalism-socialism-and-democracy-up.html">Capitalism, Socialism and Democracy UP</a></li>
+</ul>
+
+<h2>August 2018</h2>
+<ul>
+<li>2018 Aug 28 – <a href="https://lukesmith.xyz/blog/cell-phones-and-the-bronze-age-collapse-1177-bc.html">Cell Phones and the Bronze Age Collapse (1177 BC)</a></li>
+<li>2018 Aug 23 – <a href="https://lukesmith.xyz/blog/the-real-bronze-age-mindset.html">The Real Bronze-Age Mindset!</a></li>
+<li>2018 Aug 21 – <a href="https://lukesmith.xyz/blog/full-msmtprc-support-added-to-mutt-wizard.html">Full MSMTPRC support added to Mutt Wizard</a></li>
+<li>2018 Aug 17 – <a href="https://lukesmith.xyz/blog/mfw-soydevs-would-use-php-for-this.html">Mfw soydevs would use PHP for this</a></li>
+<li>2018 Aug 17 – <a href="https://lukesmith.xyz/blog/intro-podcast-episode-up-and-rss-feed-available..html">Intro podcast episode up and RSS feed available.</a></li>
+<li>2018 Aug 15 – <a href="https://lukesmith.xyz/blog/ive-deleted-my-twitter.html">I've deleted my Twitter</a></li>
+<li>2018 Aug 11 – <a href="https://lukesmith.xyz/blog/minor-blog-addition.html">Minor blog addition</a></li>
+<li>2018 Aug 11 – <a href="https://lukesmith.xyz/blog/podcast-series-to-begin-shortly.html">Podcast series to begin shortly</a></li>
+<li>2018 Aug 05 – <a href="https://lukesmith.xyz/blog/now-this-is-bash-autism.html">Now THIS is Bash AUTISM!</a></li>
+<li>2018 Aug 05 – <a href="https://lukesmith.xyz/blog/dont-be-a-bash-brainlet.html">Don't be a Bash BRAINLET!</a></li>
+<li>2018 Aug 04 – <a href="https://lukesmith.xyz/blog/minor-hack-pausing-all-mpv-videos-on-any-screen.html">Minor hack: Pausing all mpv videos on any screen</a></li>
+<li>2018 Aug 04 – <a href="https://lukesmith.xyz/blog/video-on-cronjobs-for-managing-my-system.html">Video on cronjobs for managing my system</a></li>
+<li>2018 Aug 03 – <a href="https://lukesmith.xyz/blog/larbs-is-about-done.html">LARBS is about done</a></li>
+<li>2018 Aug 01 – <a href="https://lukesmith.xyz/blog/scripting-in-action.html">Scripting in action</a></li>
+</ul>
+
+<h2>July 2018</h2>
+<ul>
+<li>2018 Jul 30 – <a href="https://lukesmith.xyz/blog/how-let-your-root-user-use-your-main-dotfiles.html">How let your root user use your main dotfiles</a></li>
+<li>2018 Jul 28 – <a href="https://lukesmith.xyz/blog/download-any-academic-article-free-a-one-liner.html">Download any Academic Article Free: A One-Liner</a></li>
+<li>2018 Jul 18 – <a href="https://lukesmith.xyz/blog/macs-pcs-and-the-power-of-public-relations.html">Macs, "PCs" and the Power of Public Relations</a></li>
+<li>2018 Jul 09 – <a href="https://lukesmith.xyz/blog/new-st-patches-xresources-and-pywal-compatibility.html">New st patches: Xresources and pywal compatibility</a></li>
+<li>2018 Jul 09 – <a href="https://lukesmith.xyz/blog/in-defense-of-pseudoscience.html">In Defense of "Pseudoscience"</a></li>
+<li>2018 Jul 05 – <a href="https://lukesmith.xyz/blog/video-on-copying-and-pasting-from-vim.html">Video on copying and pasting from Vim</a></li>
+<li>2018 Jul 04 – <a href="https://lukesmith.xyz/blog/i3blocks-reloaded.html">i3blocks reloaded</a></li>
+</ul>
+
+<h2>June 2018</h2>
+<ul>
+<li>2018 Jun 21 – <a href="https://lukesmith.xyz/blog/monetized-with-super-chats.html">Monetized with Super Chats</a></li>
+<li>2018 Jun 20 – <a href="https://lukesmith.xyz/blog/redesign-of-website.html">Redesign of Website</a></li>
+<li>2018 Jun 20 – <a href="https://lukesmith.xyz/blog/a-journey-to-athens.html">A Journey to Athens</a></li>
+<li>2018 Jun 17 – <a href="https://lukesmith.xyz/blog/first-imagemagick-videos.html">First Imagemagick Videos</a></li>
+<li>2018 Jun 16 – <a href="https://lukesmith.xyz/blog/updates-about-money-and-patreon.html">Updates about Money and Patreon</a></li>
+<li>2018 Jun 15 – <a href="https://lukesmith.xyz/blog/video-on-gimp-basics.html">Video on GIMP basics</a></li>
+<li>2018 Jun 14 – <a href="https://lukesmith.xyz/blog/consciousness-bicamerality-and-book-reviews.html">Consciousness, bicamerality and book reviews</a></li>
+<li>2018 Jun 14 – <a href="https://lukesmith.xyz/blog/linux-is-the-wild-west-talk-is-now-out.html">Linux is the Wild West! Talk is now out</a></li>
+<li>2018 Jun 13 – <a href="https://lukesmith.xyz/blog/linuxfest-2018-review.html">Linuxfest 2018 review</a></li>
+<li>2018 Jun 12 – <a href="https://lukesmith.xyz/blog/syncthing-video-also-patreon-changes.html">Syncthing video, also Patreon changes</a></li>
+<li>2018 Jun 11 – <a href="https://lukesmith.xyz/blog/the-secrets-in-hamlets-mill.html">The Secrets in Hamlet's Mill</a></li>
+<li>2018 Jun 10 – <a href="https://lukesmith.xyz/blog/lol-linuxfest.html">Lol Linuxfest</a></li>
+</ul>
+
+<h2>May 2018</h2>
+<ul>
+<li>2018 May 31 – <a href="https://lukesmith.xyz/blog/exile-in-suburbia.html">Exile in Suburbia</a></li>
+<li>2018 May 27 – <a href="https://lukesmith.xyz/blog/whomst-lives-in-georgia.html">Whomst lives in Georgia?</a></li>
+<li>2018 May 23 – <a href="https://lukesmith.xyz/blog/series-on-old-norse-and-language-learning.html">Series on Old Norse and Language Learning?</a></li>
+<li>2018 May 22 – <a href="https://lukesmith.xyz/blog/stream-soon.html">Stream soon</a></li>
+<li>2018 May 20 – <a href="https://lukesmith.xyz/blog/forum-now-has-http--ssl-lunduke-btfo-once-again.html">Forum now has HTTP &amp; SSL (Lunduke BTFO once again)</a></li>
+<li>2018 May 20 – <a href="https://lukesmith.xyz/blog/how-i-write-accent-marks-and-ipa-characters-in-vim.html">How I Write Accent Marks and IPA Characters in Vim</a></li>
+<li>2018 May 20 – <a href="https://lukesmith.xyz/blog/video-on-the-blog-system.html">Video on the blog system</a></li>
+<li>2018 May 20 – <a href="https://lukesmith.xyz/blog/guests-now-allowed-on-forum-perks-for-supporters..html">Guests now allowed on forum; Perks for supporters.</a></li>
+<li>2018 May 19 – <a href="https://lukesmith.xyz/blog/more-tinkering-today.html">More tinkering today</a></li>
+<li>2018 May 16 – <a href="https://lukesmith.xyz/blog/check-github-for-the-blog-system.html">Check Github for the blog system</a></li>
+<li>2018 May 16 – <a href="https://lukesmith.xyz/blog/excuse-the-rss-mess.html">Excuse the RSS mess!</a></li>
+<li>2018 May 16 – <a href="https://lukesmith.xyz/blog/new-forum-up-and-under-preparation.html">New Forum Up and Under Preparation</a></li>
+<li>2018 May 14 – <a href="https://lukesmith.xyz/blog/on-my-new-blog-system.html">On my new blog system</a></li>
+<li>2018 May 14 – <a href="https://lukesmith.xyz/blog/new-turbo-minimalist-site.html">New turbo-minimalist site</a></li>
+</ul>
+
+
+
+<footer>
+    Luke Smith
+<br>
+    <a href="https://lukesmith.xyz/index.html"><img src="assets/home.svg" alt="Home" title="Return to main page"> Home</a> —
+    <a href="https://lukesmith.xyz/emailme.html"><img src="assets/email.svg" alt="Contact" title="How to contact me"> Mail</a> —
+    <a href="https://lukesmith.xyz/rss.xml"><img src="assets/rss.svg" alt="RSS" title="Subscribe to my RSS feed for updates."> RSS</a>
+<br>
+    <a href="https://lukesmith.xyz/donate.html">donate:</a>
+    <a href="https://paypal.me/lukemsmith"><img src="assets/paypal.svg" alt="Paypal" title="Paypal"></a>
+    <a href="https://liberapay.com/LukeSmith"><img src="assets/liberapay.svg" alt="Liberapay" title="Liberapay"></a>
+    <a href="https://lukesmith.xyz/pix/qr_btc.png"><img src="assets/bitcoin.svg" alt="Bitcoin" title="My Bitcoin address"></a>
+    <a href="https://lukesmith.xyz/pix/qr_xmr.png"><img src="assets/monero.svg" alt="Monero" title="My Monero address"></a>
+</footer>
+
+
+
+</body></html>

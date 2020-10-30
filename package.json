@@ -1,0 +1,18 @@
+{
+  "name": "luke-smith-xyz",
+  "version": "1.0.0",
+  "description": "My attempt at improving the styles of lukesmith.xyz",
+  "main": "app.js",
+  "scripts": {
+    "build:scss": "node-sass --output-style compressed -o dist/styles src/styles",
+    "watch:scss": "onchange -i -v \"./src/styles/*.scss\" -- npm run build:scss"
+  },
+  "repository": "https://github.com/kolaczyn/lukesmithxyz.git",
+  "author": "Paweł Kołaczyński <kolaczyn@protonmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "onchange": "^7.1.0"
+  }
+}

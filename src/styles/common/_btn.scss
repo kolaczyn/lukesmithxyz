@@ -1,10 +1,32 @@
 .btn {
-    color: #fff;
+    color: $color-bg-dark;
     background-color: $color-primary;
-    padding: .8rem 1rem .8rem 1rem;
+    padding: 0.8rem 1rem;
     border-radius: 2rem;
-    font-weight: bolder;
+    font-weight: bold;
     display: inline-block;
     width: auto;
     text-align: center;
+    cursor: pointer;
+    animation: all 0.5s ease-out;
+    border: 3px solid $color-primary;
+    
+    &:hover {
+        background-color: transparent;
+        color: $color-primary;
+        border: 3px solid $color-primary;
+    }
+
+    &--secondary {
+        background-color: transparent;
+        color: $color-primary;
+        border: 3px solid $color-primary;
+        padding: 0.4rem 0.5rem;
+        // font-weight: normal;
+        &:hover {
+            background-color: $color-primary;
+            color: $color-bg-dark;
+            // border: 3px solid $color-primary;
+        }
+    }
 }

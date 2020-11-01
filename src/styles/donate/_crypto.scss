@@ -3,7 +3,9 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem 2rem;
     margin-top: 2rem;
+    margin-bottom: 4rem;
 
+    
     &__up {
         display: flex;
         justify-content: space-between;
@@ -16,16 +18,21 @@
             margin: 0.75rem;
         }
     }
-
+    
     &__down {
         margin-top: 1rem;
-
+        
         a:first-child {
             margin-bottom: 1rem;
         }
     }
-
+    
     &__card {
+        transition: all .2s ease-out;
+        &:hover{
+            filter: drop-shadow(0 1rem 0.6rem rgba(0, 0, 0, 0.6));
+            transform: scale(1.08);
+        }
         filter: drop-shadow(0 0.2rem 0.6rem rgba(0, 0, 0, 0.6));
         flex-grow: 0;
         background-color: $color-bg-light;

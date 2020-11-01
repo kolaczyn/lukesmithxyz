@@ -1,0 +1,17 @@
+.affiliate {
+
+&__card {
+    background-color: $color-bg-light;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    padding: 1rem;
+
+    filter: drop-shadow(0 .2rem .5rem rgba(0,0,0, .6));
+    z-index: -10;
+
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+}
+}

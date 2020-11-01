@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://lukesmith.xyz/a -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>404</title>
+<link rel="stylesheet" type="text/css" href="../dist/styles/404.css">
+
+<script data-dapp-detection="">
+(function() {
+  let alreadyInsertedMetaTag = false
+
+  function __insertDappDetected() {
+    if (!alreadyInsertedMetaTag) {
+      const meta = document.createElement('meta')
+      meta.name = 'dapp-detected'
+      document.head.appendChild(meta)
+      alreadyInsertedMetaTag = true
+    }
+  }
+
+  if (window.hasOwnProperty('web3')) {
+    // Note a closure can't be used for this var because some sites like
+    // www.wnyc.org do a second script execution via eval for some reason.
+    window.__disableDappDetectionInsertion = true
+    // Likely oldWeb3 is undefined and it has a property only because
+    // we defined it. Some sites like wnyc.org are evaling all scripts
+    // that exist again, so this is protection against multiple calls.
+    if (window.web3 === undefined) {
+      return
+    }
+    __insertDappDetected()
+  } else {
+    var oldWeb3 = window.web3
+    Object.defineProperty(window, 'web3', {
+      configurable: true,
+      set: function (val) {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        oldWeb3 = val
+      },
+      get: function () {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        return oldWeb3
+      }
+    })
+  }
+})()</script></head>
+
+<body>
+
+<nav>
+<ul class="menubar">
+    <li><a href="https://lukesmith.xyz/index.html"><img src="../assets/home.svg" alt="Home"> Home</a></li>
+
+    <li><a href="https://videos.lukesmith.xyz/"><img src="../assets/camcorder.svg" alt="Camcorder"> Videos</a>
+        <ul>
+            <li><a href="https://youtube.com/c/lukesmithxyz"><img src="../assets/youtube.svg" alt="YouTube"> YouTube</a></li>
+            <li><a href="https://www.bitchute.com/channel/lukesmith/"><img src="../assets/bitchute.svg" alt="BitChute"> Bitchute</a></li>
+            <li><a href="https://lbry.tv/@Luke:7"><img src="../assets/lbry.svg" alt="LBRY"> LBRY</a></li>
+            <li><a href="https://videos.lukesmith.xyz/"><img src="../assets/peertube.svg" alt="PeerTube"> Locally-hosted videos</a></li>
+        </ul>
+    </li>
+
+    <li><img src="../assets/tux.svg" alt="Tux"> Linux
+        <ul>
+            <li><a href="https://larbs.xyz/"><img src="../assets/larbs.svg" alt="LARBS"> LARBS</a></li>
+            <li><a href="https://lukesmith.xyz/programs.html"><img src="../assets/computer.svg" alt="Computer"> Programs I use</a></li>
+            <li><a href="https://github.com/lukesmithxyz"><img src="../assets/octo.svg" alt="Github"> Github</a></li>
+            <li><a href="https://gitlab.com/lukesmithxyz"><img src="../assets/gitlab.svg" alt="Gitlab"> Gitlab</a></li>
+            <li><a href="https://git.lukesmith.xyz/"><img src="../assets/git.svg" alt="Git Server"> Git server</a></li>
+        </ul>
+    </li>
+
+    <li><a href="https://notrelated.xyz/"><img src="../assets/nr.svg" alt="Not Related!"> Learn</a>
+        <ul>
+            <li><a href="https://notrelated.xyz/"><img src="../assets/nr.svg" alt="Not Related!"> <i>Not Related!</i></a></li>
+            <li><a href="https://lukesmith.xyz/library.html"><img src="../assets/books.svg" alt="Books"> Library</a></li>
+            <li><a href="https://lukesmith.xyz/latex.html"><img src="../assets/tex.svg" alt="TeX"> LaTeX</a></li>
+            <!-- <li><a href="nitpick.html"><img src="pix/gifs/butts.png" class=soy alt="Soyboy"> Nitpicking</a></li> -->
+        </ul>
+    </li>
+
+    <li>Personal
+        <ul>
+            <li><a href="https://lukesmith.xyz/emailme.html"><img src="../assets/email.svg" alt="Email"> Contact</a></li>
+            <li><a href="https://lukesmith.xyz/blogindex.html"><img src="../assets/blog.svg" alt="Blog"> Blog</a></li>
+            <li><a href="https://lukesmith.xyz/files/"><img src="../assets/folder.svg" alt="Files"> Files</a></li>
+            <li><a href="https://searx.lukesmith.xyz/"><img src="../assets/searx.svg" alt="Searx"> Search Engine</a></li>
+        </ul>
+    </li>
+
+    <li><a href="https://lukesmith.xyz/donate.html"><img src="../assets/money.png" alt="Donate"> Donate</a>
+        <ul>
+            <li><a href="https://paypal.me/lukemsmith"><img src="../assets/paypal.svg" alt="Paypal"> Paypal</a></li>
+            <li><a href="https://lukesmith.xyz/donate.html#crypto"><img src="../assets/bitcoin.svg" alt="Bitcoin">/<img src="../assets/monero.svg" alt="Monero"> Crypto</a></li>
+            <li><a href="https://liberapay.com/LukeSmith"><img src="../assets/liberapay.svg" alt="Liberapay"> Liberapay</a></li>
+            <li><a href="https://patreon.com/lukesmith"><img src="../assets/patreon.svg" alt="Patreon"> Patreon</a></li>
+            <li><a href="https://lukesmith.xyz/donate.html#zelle"><img src="../assets/zelle.svg" alt="Zelle"> Bank transfer</a></li>
+        </ul>
+    </li>
+
+</ul>
+</nav>
+
+<h1>404: Heckin' Page Not Found!</h1>
+
+<p style="text-align:center"><span class="soy">Oh nooo!</span> Sorry folks, but page not foundarino!</p>
+<p style="text-align:center">Our gleeful team of Pajeets and Soydevs are on the march like busy little bees to fix the problem!</p>
+
+<img style="margin:auto;display:block" src="../assets/soy.gif" alt="Soyboy" title="Soyboy">
+
+<p style="text-align:center">(Just in case you can't tell, that's a joke and you probably just typed something in wrong or got directed to a dead link.)</p>
+<p style="text-align:center">(If it's something actually important missing, email me at <a href="mailto:luke@lukesmith.xyz">luke@lukesmith.xyz</a>.)</p>
+
+<footer>
+    Luke Smith
+<br>
+    <a href="https://lukesmith.xyz/index.html"><img src="../assets/home.svg" alt="Home" title="Return to main page"> Home</a> —
+    <a href="https://lukesmith.xyz/emailme.html"><img src="../assets/email.svg" alt="Contact" title="How to contact me"> Mail</a> —
+    <a href="https://lukesmith.xyz/rss.xml"><img src="../assets/rss.svg" alt="RSS" title="Subscribe to my RSS feed for updates."> RSS</a>
+<br>
+    <a href="https://lukesmith.xyz/donate.html">donate:</a>
+    <a href="https://paypal.me/lukemsmith"><img src="../assets/paypal.svg" alt="Paypal" title="Paypal"></a>
+    <a href="https://liberapay.com/LukeSmith"><img src="../assets/liberapay.svg" alt="Liberapay" title="Liberapay"></a>
+    <a href="https://lukesmith.xyz/pix/qr_btc.png"><img src="../assets/bitcoin.svg" alt="Bitcoin" title="My Bitcoin address"></a>
+    <a href="https://lukesmith.xyz/pix/qr_xmr.png"><img src="../assets/monero.svg" alt="Monero" title="My Monero address"></a>
+</footer>
+
+
+
+</body></html>

@@ -1,0 +1,27 @@
+.zelle {
+    h4 {
+        margin-bottom: .5rem;
+    }
+    img {
+        float: right;
+    }
+    &__how-to{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    li::before{
+        content: '';
+        display: inline-block;
+        height: .95rem;
+        width: .95rem;
+        border-radius: 50%;
+        margin-right: .75rem;
+        background-color: $color-white;
+        opacity: .45;
+    }
+    &__note{
+        :nth-child(2){
+            margin-bottom: .5rem;
+        }
+    }
+}

@@ -6,10 +6,10 @@
 
     &__up {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
         img {
-            height: 5rem;
+            height: 3.2rem;
             width: auto; // for SVG
         }
         h4 {
@@ -17,7 +17,16 @@
         }
     }
 
+    &__down {
+        margin-top: 1rem;
+
+        a:first-child {
+            margin-bottom: 1rem;
+        }
+    }
+
     &__card {
+        filter: drop-shadow(0 0.2rem 0.6rem rgba(0, 0, 0, 0.6));
         flex-grow: 0;
         background-color: $color-bg-light;
         border-radius: 0.5rem;

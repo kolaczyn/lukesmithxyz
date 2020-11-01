@@ -1,83 +1,81 @@
-nav {
-    font-size: 1.5rem;
+.nav {
+  background-color: $color-bg-light;
+
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+
+  display: flex;
+  justify-content: center;
+
+  filter: drop-shadow(0 0.2rem 0.5rem rgba(0, 0, 0, 0.4));
+
+  a:link,
+  a:visited {
+    color: $color-white;
+    text-decoration: none;
+  }
+
+  &--active {
+    font-weight: bold;
+  }
+
+  &__primary-ul {
+    cursor: pointer;
+    width: $page-width;
+
+    display: flex;
+  }
+
+  &__primary-li {
+    position: relative;
+    flex-grow: 1;
+    padding-bottom: 0.85rem;
+    padding-top: 0.85rem;
+  }
+
+  &__secondary-ul {
+    width: 100%;
     background-color: $color-bg-light;
+    position: absolute;
+
+    filter: drop-shadow(0 0.25rem 0.5rem rgba(0, 0, 0, 0.5));
+
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transition: all 0.2s ease-in-out;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1, 0.91);
+  }
+
+  &__secondary-li {
+    border: 0.12rem solid $color-bg-dark;
+    padding: 1rem 0rem;
+    font-size: 85%;
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
 
-    filter: drop-shadow(0 0.2rem 0.5rem rgba(0, 0, 0, 0.4));
-
-    .menubar {
-        // width: min-content
-        width: $page-width;
-
-        // display:inline-block;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-
-        a:link,
-        a:visited {
-            color: $color-white;
-            text-decoration: none;
-        }
-
-        li {
-            transition: background-color 0.15s ease-out;
-
-            &.active {
-                font-weight: bold;
-            }
-
-            flex-grow: 1;
-            padding-top: 0.85rem;
-            padding-bottom: 0.85rem;
-            // width: $page-width / 6;
-            display: flex;
-            // align-items: center;
-            justify-content: center;
-            position: relative;
-
-            &:hover {
-                cursor: pointer;
-                background-color: $color-bg-dark;
-            }
-
-            ul {
-                width: 100%;
-                background-color: $color-bg-light;
-
-                filter: drop-shadow(0 0.25rem 0.5rem rgba(0, 0, 0, 0.5));
-
-                position: absolute;
-                top: 100%;
-                right: 0;
-                transition: all 0.2s ease-in-out;
-
-                opacity: 0;
-                visibility: hidden;
-                transform: scale(1, 0.91);
-
-                li {
-                    border: 0.12rem solid $color-bg-dark;
-                    padding: 1rem 0rem;
-                    font-size: 85%;
-
-                    a {
-                        float: left;
-                        margin-right: auto;
-                        margin-left: 0.75rem;
-                    }
-                }
-            }
-
-            &:hover {
-                ul {
-                    transform: scale(1, 1);
-                    opacity: 100%;
-                    visibility: visible;
-                }
-            }
-        }
+    > a {
+      float: left;
+      margin-right: auto;
+      margin-left: 0.75rem;
     }
+  }
+
+  &__primary-li,
+  &__secondary-li {
+    transition: background-color 0.15s ease-out;
+    &:hover {
+      background-color: $color-bg-dark;
+    }
+    &:hover {
+      ul {
+        transform: scale(1, 1);
+        opacity: 100%;
+        visibility: visible;
+      }
+    }
+  }
 }

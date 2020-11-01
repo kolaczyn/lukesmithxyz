@@ -5,11 +5,11 @@
 @import 'modifiers';
 
 @import 'content';
-@import 'recent-posts';
-@import 'rss-info';
 
 @import "nav";
 @import "footer";
+
+@import "crypto";
 
 img{
 	width: 2rem;

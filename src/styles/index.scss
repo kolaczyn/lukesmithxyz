@@ -1,12 +1,12 @@
-@import "variables";
-@import "base";
+@import 'common/variables';
+@import 'common/base';
 
-@import 'typography';
-@import 'modifiers';
+@import 'common/typography';
+@import 'common/modifiers';
 
-@import 'content';
-@import 'recent-posts';
-@import 'rss-info';
+@import 'common/content';
+@import 'home/recent-posts';
+@import 'home/rss-info';
 
-@import "nav";
-@import "footer";
+@import 'common/nav';
+@import 'common/footer';

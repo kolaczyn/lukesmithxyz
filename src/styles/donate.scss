@@ -1,15 +1,15 @@
-@import "variables";
-@import "base";
+@import 'common/variables';
+@import 'common/base';
 
-@import 'typography';
-@import 'modifiers';
+@import 'common/typography';
+@import 'common/modifiers';
 
-@import 'content';
+@import 'common/content';
 
-@import "nav";
-@import "footer";
+@import 'common/nav';
+@import 'common/footer';
 
-@import "crypto";
+@import 'donate/crypto';
 
 img{
 	width: 2rem;

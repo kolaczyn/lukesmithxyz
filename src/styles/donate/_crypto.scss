@@ -1,6 +1,31 @@
 .crypto {
-    &__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__up {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        img {
+            height: 5rem;
+            width: auto; // for SVG
+        }
+        h4 {
+            margin: 0.75rem;
+        }
+    }
+
+    &__card {
+        flex-grow: 1;
+        background-color: $color-bg-light;
+        margin-top: 2rem;
+        border-radius: 0.5rem;
+        padding: 1rem;
+    }
+    &__card:nth-child(2),
+    &__card:nth-child(5)
+    {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }

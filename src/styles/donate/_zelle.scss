@@ -9,34 +9,43 @@
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
-    li::before {
-        content: "";
-        display: inline-block;
-        height: 0.95rem;
-        width: 0.95rem;
-        border-radius: 50%;
-        margin-right: 0.75rem;
-        background-color: $color-white;
-        opacity: 0.45;
+    li {
+        transition: all .15s ease-out;
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 0.95rem;
+            width: 0.95rem;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            // border-radius: 50%;
+            margin-right: 0.75rem;
+            background-color: $color-white;
+            opacity: 0.45;
+        }
+        &:hover {
+            transform: scale(1.02) translateX(.5rem);
+        }
     }
     &__note {
         :nth-child(2) {
             margin-bottom: 0.5rem;
         }
     }
-    &__email-wrapper{
+    &__email-wrapper {
         position: relative;
     }
     &__email {
         // animation: ;
         cursor: pointer;
-        &:hover + div{
+        &:hover + div {
             visibility: visible;
             opacity: 100%;
         }
     }
     &__click-to-copy {
-        transition: opacity .2s ease-in;
+        transition: opacity 0.2s ease-in;
         opacity: 0;
         visibility: hidden;
         margin-top: 0.5rem;

@@ -1,7 +1,9 @@
 .crypto {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem 2rem;
+    margin-top: 2rem;
+
     &__up {
         display: flex;
         flex-direction: column;
@@ -16,17 +18,9 @@
     }
 
     &__card {
-        flex-grow: 1;
+        flex-grow: 0;
         background-color: $color-bg-light;
-        margin-top: 2rem;
         border-radius: 0.5rem;
         padding: 1rem;
-    }
-    // doesnt work when website scales down to mobile
-    &__card:nth-child(2),
-    &__card:nth-child(5)
-    {
-        margin-left: 1rem;
-        margin-right: 1rem;
     }
 }

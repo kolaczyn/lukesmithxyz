@@ -22,6 +22,7 @@
         border-radius: 0.5rem;
         padding: 1rem;
     }
+    // doesnt work when website scales down to mobile
     &__card:nth-child(2),
     &__card:nth-child(5)
     {

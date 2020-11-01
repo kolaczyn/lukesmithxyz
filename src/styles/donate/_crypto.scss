@@ -5,6 +5,18 @@
     margin-top: 2rem;
     margin-bottom: 4rem;
 
+    &__card {
+        transition: all .2s ease-out;
+        &:hover{
+            filter: drop-shadow(0 1rem 0.6rem rgba(0, 0, 0, 0.6));
+            transform: scale(1.08);
+        }
+        filter: drop-shadow(0 0.2rem 0.6rem rgba(0, 0, 0, 0.6));
+        flex-grow: 0;
+        background-color: $color-bg-light;
+        border-radius: 0.5rem;
+        padding: 1rem;
+    }
     
     &__up {
         display: flex;
@@ -12,7 +24,7 @@
         align-items: center;
         img {
             height: 3.2rem;
-            width: auto; // for SVG
+            width: auto; // because SVGs don't scale properly unless I do this
         }
         h4 {
             margin: 0.75rem;
@@ -27,16 +39,4 @@
         }
     }
     
-    &__card {
-        transition: all .2s ease-out;
-        &:hover{
-            filter: drop-shadow(0 1rem 0.6rem rgba(0, 0, 0, 0.6));
-            transform: scale(1.08);
-        }
-        filter: drop-shadow(0 0.2rem 0.6rem rgba(0, 0, 0, 0.6));
-        flex-grow: 0;
-        background-color: $color-bg-light;
-        border-radius: 0.5rem;
-        padding: 1rem;
-    }
 }

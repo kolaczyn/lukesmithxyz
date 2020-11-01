@@ -1,6 +1,4 @@
 .affiliate {
-    // margin-top: 4rem;
-    // z-index: 10;
     img {
         height: 2.5rem;
         width: auto;
@@ -13,14 +11,12 @@
         font-size: 1.2rem;
     }
 
-    .affiliate__info:nth-child(2) {
-        min-height: 7.5rem;
+    .btn {
+        margin-top: 1rem;
     }
-    .affiliate__info:nth-child(3) {
-        min-height: 7.5rem;
-    }
-    .affiliate__info:nth-child(4) {
-        min-height: 8.5rem;
+
+    h4 {
+        margin-bottom: 0.5rem;
     }
 
     &__card {
@@ -36,13 +32,30 @@
         min-height: 2.5rem;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 1rem;
-    }
-    .btn {
-        margin-top: 0.5rem;
+        margin-bottom: .5rem;
     }
 
-    h4 {
-        margin-bottom: 0.5rem;
+    &__info {
+        &::before{
+            display: block;
+            content: '';
+            background-color: $color-bg-dark;
+            height: 3px;
+            border-radius: 3px;
+            width: 100%;
+            margin-bottom: .5rem;
+        }
+        &:nth-child(2) {
+            margin-top: .5rem;
+            min-height: 7rem;
+        }
+        &:nth-child(3) {
+            margin-top: .5rem;
+            min-height: 7rem;
+        }
+        &:nth-child(4) {
+            margin-top: .5rem;
+            min-height: 8rem;
+        }
     }
 }

@@ -11,55 +11,25 @@
         margin-bottom: 1rem;
     }
     li {
-        transition: all .15s ease-out;
         &::before {
+            transition: all 0.25s ease-out;
             content: "";
             display: inline-block;
             height: 0.95rem;
             width: 0.95rem;
-            border-top-right-radius: 50%;
-            border-bottom-right-radius: 50%;
-            border-bottom-left-radius: 50%;
-            // border-radius: 50%;
+            border-radius: 0% 50% 50% 50%;
             margin-right: 0.75rem;
             background-color: $color-white;
             opacity: 0.45;
         }
-        &:hover {
-            transform: scale(1.02) translateX(.5rem);
+        &:hover::before {
+            transform: scale(1.15);
+            opacity: 0.85;
         }
     }
     &__note {
         :nth-child(2) {
             margin-bottom: 0.5rem;
         }
-    }
-    &__email-wrapper {
-        position: relative;
-    }
-    &__email {
-        // animation: ;
-        cursor: pointer;
-        &:hover + div {
-            visibility: visible;
-            opacity: 100%;
-        }
-    }
-    // maybe I should just change the opacity of the bullet on hover?
-    // that wuold make things a little less confusing
-    &__click-to-copy {
-        transition: opacity 0.2s ease-in;
-        opacity: 0;
-        visibility: hidden;
-        margin-top: 0.5rem;
-        text-align: center;
-        width: 100%;
-        color: $color-white;
-        background-color: $color-bg-dark;
-        border-radius: 0.5rem;
-        padding: 0.5rem;
-        position: absolute;
-        top: 100%;
-        left: 0;
     }
 }

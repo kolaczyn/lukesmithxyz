@@ -1,19 +1,19 @@
-.general{
+.general {
     margin-bottom: 4rem;
+
     &__buttons {
         display: flex;
         justify-content: space-around;
+
         .btn {
             display: flex;
             align-items: center;
             justify-content: space-around;
-            width: auto;
 
             img {
                 margin-right: 1rem;
+
             }
-    
         }
     }
-
 }

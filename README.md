@@ -4,10 +4,14 @@
 
 ### Before
 
-![](before.png)
+![](readme-imgs/before-home.png)  
+
+![](readme-imgs/before-donate.png)
 
 ### After
-![](after.png)
+![](readme-imgs/after-home.png)  
+
+![](readme-imgs/after-donate.png)
 
 ## About
 

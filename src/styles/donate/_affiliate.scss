@@ -41,8 +41,9 @@ margin-top: 2rem;
   &__up {
     min-height: 2.5rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   &__info {

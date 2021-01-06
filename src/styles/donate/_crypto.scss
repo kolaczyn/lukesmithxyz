@@ -43,12 +43,14 @@
     align-items: center;
     font-size: 1.2rem;
     justify-content: space-between;
-    @media only screen and (max-width: 1000px) {
+
+    @media only screen and (max-width: 680px) {
+      align-items: initial;
+      gap: 1rem;
       & {
+        text-align: center;
+        flex-direction: column;
         justify-content: flex-start;
-        & > :first-child {
-            margin-right: 1rem;
-        }
       }
     }
   }

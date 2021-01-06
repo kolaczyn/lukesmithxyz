@@ -3,7 +3,6 @@
 ## Comparison
 
 ### Before
-
 ![](readme-imgs/before-home.png)  
 
 ![](readme-imgs/before-donate.png)

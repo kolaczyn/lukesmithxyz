@@ -1,42 +1,55 @@
 .crypto {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem 2rem;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 
-    &__card {
-        transition: all .2s ease-out;
-        &:hover{
-            filter: drop-shadow(0 1rem 0.6rem rgba(0, 0, 0, 0.6));
-            transform: scale(1.08);
-        }
-        filter: drop-shadow(0 0.2rem 0.6rem rgba(0, 0, 0, 0.6));
-        flex-grow: 0;
-        background-color: $color-bg-light;
-        border-radius: 0.5rem;
-        padding: 1rem;
+  @media only screen and (max-width: 1000px) {
+    & {
+      grid-template-columns: repeat(2, 1fr);
     }
-    
-    &__up {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        img {
-            height: 3.2rem;
-            width: auto; // because SVGs don't scale properly unless I do this
-        }
-        h4 {
-            margin: 0.75rem;
-        }
+  }
+
+  &__card {
+    transition: all 0.2s ease-out;
+    &:hover {
+      filter: drop-shadow(0 1rem 0.6rem rgba(0, 0, 0, 0.6));
+      transform: scale(1.08);
     }
-    
-    &__down {
-        margin-top: 1rem;
-        
-        a:first-child {
-            margin-bottom: 1rem;
-        }
+    filter: drop-shadow(0 0.2rem 0.6rem rgba(0, 0, 0, 0.6));
+    flex-grow: 0;
+    background-color: $color-bg-light;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+
+  &__up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      height: 3.2rem;
+      width: auto; // because SVGs don't scale properly unless I do this
     }
-    
+    h4 {
+      margin: 0.75rem;
+    }
+  }
+
+  &__down {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    @media only screen and (max-width: 1000px) {
+      & {
+        justify-content: flex-start;
+        & > :first-child {
+            margin-right: 1rem;
+        }
+      }
+    }
+  }
 }

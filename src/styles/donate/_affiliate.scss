@@ -1,61 +1,71 @@
 .affiliate {
-    img {
-        height: 2.5rem;
-        width: auto;
+margin-top: 2rem;
+  img {
+    height: 2.5rem;
+    width: auto;
+  }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.65rem;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 1100px) {
+    & {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
     }
-    display: grid;
-    grid-template-columns: repeat(4, 240px);
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    margin-top: 1rem;
+  }
+
+  h4 {
+    margin-bottom: 0.5rem;
+  }
+
+  &__card {
+    transition: all 0.2s ease-out;
+    margin-top: 0;
+
+    &:hover {
+      filter: drop-shadow(0 1rem 0.6rem rgba(0, 0, 0, 0.6));
+      transform: scale(1.1);
+    }
+  }
+
+  &__up {
+    min-height: 2.5rem;
+    display: flex;
     justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
 
-    p {
-        font-size: 1.2rem;
+  &__info {
+    &::before {
+      display: block;
+      content: "";
+      background-color: $color-bg-dark;
+      height: 3px;
+      border-radius: 3px;
+      width: 100%;
+      margin-bottom: 0.5rem;
     }
-
-    .btn {
-        margin-top: 1rem;
+    &:nth-child(2) {
+      margin-top: 0.5rem;
+      min-height: 9rem;
     }
-
-    h4 {
-        margin-bottom: 0.5rem;
+    &:nth-child(3) {
+      margin-top: 0.5rem;
+      min-height: 8rem;
     }
-
-    &__card {
-        transition: all 0.2s ease-out;
-
-        &:hover {
-            filter: drop-shadow(0 1rem 0.6rem rgba(0, 0, 0, 0.6));
-            transform: scale(1.1);
-        }
+    &:nth-child(4) {
+      margin-top: 0.5rem;
+      min-height: 11rem;
     }
-
-    &__up {
-        min-height: 2.5rem;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: .5rem;
-    }
-
-    &__info {
-        &::before{
-            display: block;
-            content: '';
-            background-color: $color-bg-dark;
-            height: 3px;
-            border-radius: 3px;
-            width: 100%;
-            margin-bottom: .5rem;
-        }
-        &:nth-child(2) {
-            margin-top: .5rem;
-            min-height: 9rem;
-        }
-        &:nth-child(3) {
-            margin-top: .5rem;
-            min-height: 8rem;
-        }
-        &:nth-child(4) {
-            margin-top: .5rem;
-            min-height: 11rem;
-        }
-    }
+  }
 }

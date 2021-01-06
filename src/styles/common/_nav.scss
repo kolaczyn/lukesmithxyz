@@ -16,7 +16,7 @@
   }
 
   &--active {
-    font-weight: bold;
+    background-color: rgba($color-bg-dark, .6);
   }
 
   &__primary-ul {
@@ -30,8 +30,15 @@
     text-align: center;
     position: relative;
     flex-grow: 1;
-    padding-bottom: 0.85rem;
-    padding-top: 0.85rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > * {
+      padding-bottom: 0.85rem;
+      padding-top: 0.85rem;
+      flex-basis: 100%;
+    }
   }
 
   &__secondary-ul {

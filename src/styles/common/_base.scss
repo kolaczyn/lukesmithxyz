@@ -11,6 +11,11 @@ main {
     margin: 5.5rem auto;
 }
 
+main, footer, .menubar {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
 body {
     overflow-x: hidden;
     background-color: $color-bg-dark;
@@ -20,6 +25,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
+  @media only screen and (max-width: 800px) {
+    font-size: 1rem;
+  }
 }
 
 a {

@@ -7,14 +7,19 @@
 }
 
 main {
-    max-width: $page-width;
     margin: 5.5rem auto;
 }
 
-main, footer, .menubar {
+.container {
+    max-width: $page-width;
     padding-right: 2rem;
     padding-left: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+// main, .nav__primary-ul, .menubar {
+// }
 
 body {
     overflow-x: hidden;

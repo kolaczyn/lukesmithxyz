@@ -1,11 +1,18 @@
 .nav {
-  background-color: $color-bg-light;
+  background-color: rgba($color-bg-light, .95);
+  position: fixed;
+  width: 100vw;
 
   z-index: 10;
   font-size: 1.5rem;
 
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
+
+  & > * {
+    // flex-grow: 1;
+    // flex-shrink: 1;
+  }
 
   filter: drop-shadow(0 0.2rem 0.5rem rgba(0, 0, 0, 0.4));
 
@@ -16,14 +23,15 @@
   }
 
   &--active {
-    background-color: rgba($color-bg-dark, .6);
+    background-color: rgba($color-bg-dark, 0.6);
   }
 
   &__primary-ul {
     cursor: pointer;
-    width: $page-width;
 
-    display: flex;
+    display: grid;
+    // I don't know why repeat(auto, 1fr) doesnt work here
+    grid-template-columns: repeat(6, 1fr);
   }
 
   &__primary-li {
@@ -35,8 +43,8 @@
     align-items: center;
 
     & > * {
-      padding-bottom: 0.85rem;
-      padding-top: 0.85rem;
+      padding-bottom: 1.2rem;
+      padding-top: 1.2rem;
       flex-basis: 100%;
     }
   }
@@ -59,16 +67,21 @@
   }
 
   &__secondary-li {
-    border: 0.12rem solid $color-bg-dark;
-    padding: 1rem 0rem;
     font-size: 85%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+
+    border-top: 2px solid $color-bg-dark;
+    &:last-child {
+      border-bottom: 2px solid $color-bg-dark;
+    }
 
     > a {
-      float: left;
-      margin-right: auto;
-      margin-left: 0.75rem;
+      text-align: left;
+      flex-grow: 1;
+      padding-top: 0.85rem;
+      padding-left: 0.85rem;
+      padding-bottom: 0.85rem;
     }
   }
 

@@ -4,4 +4,3 @@ copyElements.forEach(element => {
         window.navigator.clipboard.writeText(element.getAttribute('toCopy'));
     });
 });
-// console.log(...copyElements)

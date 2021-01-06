@@ -1,51 +1,45 @@
 footer {
-	width: 100vw;
-	margin-top: auto;
-	font-size: 1.5rem;
-	background-color: $color-bg-light;
+  width: 100vw;
+  margin-top: auto;
+  font-size: 1.5rem;
+  background-color: $color-bg-light;
 	filter: drop-shadow(0 -0.6rem 0.5rem rgba(0, 0, 0, 0.4));
-	// margin-top: 2rem;
+	padding-top: .85rem;
+	padding-bottom: .85rem;
 
-	img {
-		padding-top: 0.85rem;
-		padding-bottom: 0.85rem;
-	}
-
-	// display: flex;
-	// align-items: center;
-	
-	img {
+  img {
 		width: 1.75rem;
-	}
-	
-	a:link,
-	a:visited {
-		color: $color-white;
-		text-decoration: none;
-	}
-	.menubar{
-		margin: 0 auto;
-		max-width: $page-width;
+		// I don't know why, but svg images in the footer are aligned in a wierd way, it's a workaround to make the align with the text
+		transform: translateY(.1875rem);
+  }
 
-		display: flex;
-		justify-content: space-between;
+  a:link,
+  a:visited {
+    color: $color-white;
+    text-decoration: none;
+  }
+  .menubar {
+    margin: 0 auto;
+    max-width: $page-width;
 
-		.left, .right {
-			// width: $page-width / 2;
-			display: flex;
-			li:not(:first-child){
-				margin-left: 1.75rem;
-			}
-			.right{
-				justify-content: flex-end;
-			}
-		}
-	}
+    display: flex;
+    justify-content: space-between;
 
-	ul {
-		display: flex;
-		align-items: center;
-		
-	}
+    .left,
+    .right {
+      // width: $page-width / 2;
+      display: flex;
+      li:not(:first-child) {
+        margin-left: 1.75rem;
+      }
+      .right {
+        justify-content: flex-end;
+      }
+    }
+  }
 
+  ul {
+    display: flex;
+    align-items: center;
+  }
 }

@@ -2,12 +2,14 @@
 
 ## Comparison
 
-### Before
+### Before ([link](https://lukesmith.xyz/))
+
 ![](readme-imgs/before-home.png)  
 
 ![](readme-imgs/before-donate.png)
 
-### After
+### After ([link](https://kolaczyn.github.io/lukesmith/))
+
 ![](readme-imgs/after-home.png)  
 
 ![](readme-imgs/after-donate.png)

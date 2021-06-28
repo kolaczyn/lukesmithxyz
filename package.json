@@ -6,7 +6,7 @@
   "scripts": {
     "build:scss": "node-sass --output-style compressed -o dist/styles src/styles",
     "watch:scss": "onchange -i -v \"./src/styles/\" -- npm run build:scss",
-    "build": "npm run build:scss && cp static/* dist/ && cp -r assets/ dist/"
+    "build": "rm -rf dist && npm run build:scss && cp static/* dist/ && cp -r assets/ dist/ && cp -r src/js/ dist/"
   },
   "repository": "https://github.com/kolaczyn/lukesmithxyz.git",
   "author": "Paweł Kołaczyński <kolaczyn@protonmail.com>",
